@@ -2,8 +2,10 @@
     x-data="{ showSidebar: false, showSearch: false, isSticky: false }" 
     @scroll.window="isSticky = (window.scrollY > 120)"
 >
-    <!-- Main Header (Scrolls away) -->
-    <header class="bg-white pt-3">
+    <!-- Mobile Fixed / Desktop Shared Wrapper -->
+    <div class="fixed top-0 left-0 w-full z-50 bg-white md:relative md:z-auto border-b border-slate-100 md:border-b-0 shadow-sm md:shadow-none">
+        <!-- Main Header -->
+        <header class="bg-white pt-1 md:pt-3">
         <!-- Sidebar Drawer Contents -->
         <template x-teleport="body">
             <div>
@@ -29,7 +31,7 @@
                     x-cloak
                 >
                     <div class="flex justify-end items-center mb-2 pb-2 border-b border-black/5">
-                        <button @click="showSidebar = false" class="p-2 hover:bg-slate-100 rounded-full transition-colors">
+                        <button @click="showSidebar = false" class="p-2 hover:bg-slate-100  transition-colors">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
                         </button>
                     </div>
@@ -40,8 +42,8 @@
                             হোম
                         </a></li>
                         <li class="border-b border-gray-400 pb-1"><a href="#" class="block text-xl font-semibold hover:text-rose-600 transition-colors">সর্বশেষ</a></li>
-                        <li class="border-b border-gray-400 pb-1"><a href="#" class="block text-xl font-semibold hover:text-rose-600 transition-colors">বিশেষ সংবাদ</a></li>
-                        <li class="border-b border-gray-400 pb-1"><a href="#" class="block text-xl font-semibold hover:text-rose-600 transition-colors">জাতীয়</a></li>
+                        <li class="border-b border-gray-400 pb-1"><a href="/special-news" class="block text-xl font-semibold hover:text-rose-600 transition-colors">বিশেষ সংবাদ</a></li>
+                        <li class="border-b border-gray-400 pb-1"><a href="/national" class="block text-xl font-semibold hover:text-rose-600 transition-colors">জাতীয়</a></li>
                         <li class="border-b border-gray-400 pb-1"><a href="#" class="block text-xl font-semibold hover:text-rose-600 transition-colors">সারাদেশ</a></li>
                         <li class="border-b border-gray-400 pb-1"><a href="#" class="block text-xl font-semibold hover:text-rose-600 transition-colors">রাজনীতি</a></li>
                         <li class="border-b border-gray-400 pb-1"><a href="#" class="block text-xl font-semibold hover:text-rose-600 transition-colors">বিশ্ব সংবাদ</a></li>
@@ -60,17 +62,17 @@
         </template>
 
         <div class="container pt-2 pb-0 text-center">
-            <div class="flex items-center justify-between mb-4">
-                <div class="flex-1 text-left hidden lg:block">
-                    <div class="flex items-center gap-2">
+            <div class="flex items-center justify-between mb-1 md:mb-4">
+                <div class="flex-1 text-left">
+                    <div class="hidden md:flex items-center gap-2">
                         <!-- Menu Icon -->
-                        <button @click="showSidebar = true" class="p-2 hover:bg-slate-100 rounded-full transition-colors">
+                        <button @click="showSidebar = true" class="p-2 hover:bg-slate-100  transition-colors">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
                         </button>
 
                         <!-- Search Feature -->
                         <div class="flex items-center">
-                            <button @click="showSearch = !showSearch" class="p-2 hover:bg-slate-100 rounded-full transition-colors transition-all duration-300">
+                            <button @click="showSearch = !showSearch" class="p-2 hover:bg-slate-100  transition-colors transition-all duration-300">
                                 <svg x-show="!showSearch" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                                 <svg x-show="showSearch" x-cloak xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
                             </button>
@@ -86,31 +88,61 @@
                                 class="ml-2"
                                 x-cloak
                             >
-                                <input type="text" placeholder="অনুসন্ধান করুন..." class="bg-slate-100 border-0 rounded-full px-4 py-2 text-sm focus:ring-2 focus:ring-rose-500 w-48 md:w-64 outline-none transition-all">
+                                <input type="text" placeholder="অনুসন্ধান করুন..." class="bg-slate-100 border-0  px-4 py-2 text-sm focus:ring-2 focus:ring-rose-500 w-48 md:w-64 outline-none transition-all">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="flex-1 flex justify-center">
+                <div class="flex-1 flex justify-center items-center px-2">
                     <a href="/">
-                        <h1 class="text-4xl md:text-6xl font-black tracking-tighter uppercase serif underline decoration-rose-500 underline-offset-8">
-                            দ্য <span class="px-2 py-0">ডেইলি</span> নিউজ
-                        </h1>
+                        <img src="{{ asset('logo.svg') }}" alt="দ্য ডেইলি নিউজ" class="h-10 md:h-20 w-auto object-contain">
                     </a>
                 </div>
-                <div class="flex-1 text-right flex justify-end items-center gap-4">
+                <div class="flex-1 text-right flex justify-end items-center gap-2">
                     @if (Route::has('login'))
-                        <nav class="flex gap-4 text-sm font-semibold">
+                        <nav class="flex gap-2 md:gap-4 text-xs md:text-sm font-semibold items-center">
                             @auth
-                                <a href="{{ url('/dashboard') }}" class="px-4 py-2 bg-slate-100 rounded-full hover:bg-slate-200 transition-all">ড্যাশবোর্ড</a>
+                                <a href="{{ url('/dashboard') }}" class="px-2 py-1.5 md:px-4 md:py-2 bg-slate-100 hover:bg-slate-200 transition-all">ড্যাশবোর্ড</a>
                             @else
-                                <a href="{{ route('login') }}" class="hover:text-rose-600 transition-colors">লগ ইন</a>
+                                <a href="{{ route('login') }}" class="py-2 hover:text-rose-600 transition-colors hidden sm:block">লগ ইন</a>
                                 @if (Route::has('register'))
-                                    <a href="{{ route('register') }}" class="bg-black text-white px-5 py-2 rounded-full hover:bg-rose-600 transition-all shadow-lg hover:shadow-rose-500/25">জয়েন করুন</a>
+                                    <a href="{{ route('register') }}" class="bg-black text-white px-2.5 py-1.5 md:px-5 md:py-2 hover:bg-rose-600 transition-all shadow-lg hover:shadow-rose-500/25">জয়েন</a>
                                 @endif
                             @endauth
                         </nav>
                     @endif
+                    
+                    <!-- Mobile Search Trigger (Far Right) -->
+                    <button @click="showSearch = true" class="md:hidden p-2 hover:bg-slate-100 transition-colors shrink-0 z-10">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="text-black"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Full Width Mobile Search Overlay (Covers Logo Section) -->
+            <div 
+                x-show="showSearch" 
+                x-transition:enter="transition ease-out duration-300"
+                x-transition:enter-start="opacity-0 translate-y-[-100%]"
+                x-transition:enter-end="opacity-100 translate-y-0"
+                x-transition:leave="transition ease-in duration-200"
+                x-transition:leave-start="opacity-100 translate-y-0"
+                x-transition:leave-end="opacity-0 translate-y-[-100%]"
+                class="md:hidden fixed inset-x-0 top-0 h-[68px] md:h-[120px] bg-white z-[150] flex items-center px-4 shadow-xl border-b-2 border-rose-500"
+                x-cloak
+            >
+                <div class="flex-1 flex items-center gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="text-rose-600"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    <input 
+                        type="text" 
+                        placeholder="অনুসন্ধান করুন..." 
+                        class="flex-1 bg-transparent border-0 py-2 text-lg font-bold focus:ring-0 outline-none placeholder:text-slate-400"
+                        @keydown.escape="showSearch = false"
+                        x-init="$watch('showSearch', value => value && $nextTick(() => $el.focus()))"
+                    >
+                    <button @click="showSearch = false" class="p-2 text-slate-400 hover:text-rose-600 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                    </button>
                 </div>
             </div>
 
@@ -186,37 +218,37 @@
         </div>
     </header>
 
-    <!-- Placeholder for Sticky Nav to prevent layout jump -->
-    <div x-show="isSticky" class="h-[52px] md:h-[60px]" x-cloak></div>
+    <!-- Placeholder for Sticky Nav to prevent layout jump (Desktop Only) -->
+    <div x-show="isSticky" class="hidden md:block md:h-[60px]" x-cloak></div>
 
     <nav 
-        class="z-50 bg-white border-b border-slate-200 transition-all duration-300"
-        :class="isSticky ? 'fixed top-0 left-0 w-full shadow shadow-black/5 py-1' : 'relative py-2'"
+        class="z-50 bg-white md:border-b border-slate-200 transition-all duration-300"
+        :class="isSticky ? 'py-1 md:fixed md:top-0 md:left-0 md:w-full md:shadow md:shadow-black/5 md:py-1' : 'relative py-1 md:py-2'"
     >
         <div class="container">
             <div 
                 class="flex items-center transition-all duration-300"
-                :class="isSticky ? 'border-t-2 border-transparent pt-0' : 'border-t-2 border-black pt-1'"
+                :class="isSticky ? 'border-t-2 border-black md:border-transparent pt-0.5 md:pt-0' : 'border-t-2 border-black pt-0.5 md:pt-1'"
             >
-                <!-- Smooth Sliding Sidebar Trigger & Logo Short -->
+                <!-- Smooth Sliding Sidebar Trigger & Logo Short (Desktop Only) -->
                 <div 
-                    class="flex items-center gap-2 overflow-hidden transition-all duration-500 ease-in-out"
-                    :class="isSticky ? 'w-20 opacity-100 mr-2' : 'w-0 opacity-0 mr-0'"
+                    class="hidden md:flex items-center gap-2 overflow-hidden transition-all duration-500 ease-in-out"
+                    :class="isSticky ? 'md:w-20 md:opacity-100 md:mr-2' : 'md:w-0 md:opacity-0 md:mr-0'"
                 >
-                    <button @click="showSidebar = true" class="p-1.5 hover:bg-slate-100 rounded-full transition-all text-black hover:text-rose-600 shrink-0">
+                    <button @click="showSidebar = true" class="p-1.5 hover:bg-slate-100  transition-all text-black hover:text-rose-600 shrink-0">
                         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
                     </button>
                     
-                    <a href="/" class="w-8 h-8 flex items-center justify-center bg-white text-rose-600 font-black serif text-xl rounded-full shadow border border-black/5 hover:bg-rose-50 transition-colors shrink-0">
+                    <a href="/" class="w-8 h-8 flex items-center justify-center bg-white text-rose-600 font-black serif text-xl  shadow border border-black/5 hover:bg-rose-50 transition-colors shrink-0">
                         D
                     </a>
                 </div>
 
-                <div class="flex-1 overflow-x-auto overflow-y-hidden no-scrollbar py-0">
+                <div class="flex-1 overflow-x-auto overflow-y-hidden no-scrollbar py-0 flex items-center justify-between">
                     <ul class="flex justify-start items-center gap-3 md:gap-5 text-sm md:text-lg font-semibold uppercase whitespace-nowrap pt-1 pb-1">
                         <li><a href="#" class="hover:text-rose-600 border-b-2 border-transparent hover:border-rose-600 pb-1 transition-all">সর্বশেষ</a></li>
-                        <li><a href="#" class="hover:text-rose-600 border-b-2 border-transparent hover:border-rose-600 pb-1 transition-all">বিশেষ সংবাদ</a></li>
-                        <li><a href="#" class="hover:text-rose-600 border-b-2 border-transparent hover:border-rose-600 pb-1 transition-all">জাতীয়</a></li>
+                        <li><a href="/special-news" class="hover:text-rose-600 border-b-2 border-transparent hover:border-rose-600 pb-1 transition-all">বিশেষ সংবাদ</a></li>
+                        <li><a href="/national" class="hover:text-rose-600 border-b-2 border-transparent hover:border-rose-600 pb-1 transition-all">জাতীয়</a></li>
                         <li><a href="#" class="hover:text-rose-600 border-b-2 border-transparent hover:border-rose-600 pb-1 transition-all">সারাদেশ</a></li>
                         <li><a href="#" class="hover:text-rose-600 border-b-2 border-transparent hover:border-rose-600 pb-1 transition-all">রাজনীতি</a></li>
                         <li><a href="#" class="hover:text-rose-600 border-b-2 border-transparent hover:border-rose-600 pb-1 transition-all">বিশ্ব সংবাদ</a></li>
@@ -230,8 +262,14 @@
                         <li><a href="#" class="hover:text-rose-600 border-b-2 border-transparent hover:border-rose-600 pb-1 transition-all">মতামত</a></li>
                         <li><a href="#" class="hover:text-rose-600 border-b-2 border-transparent hover:border-rose-600 pb-1 transition-all">অন্যান্য</a></li>
                     </ul>
+                    
+                    <!-- Mobile Menu Icon (Far Right of Categories) -->
+                    <button @click="showSidebar = true" class="md:hidden p-1.5 ml-2 bg-white sticky right-0 shadow-[-10px_0_10px_-5px_rgba(255,255,255,0.9)] z-10 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-black"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+                    </button>
                 </div>
             </div>
         </div>
-    </nav>
+        </nav>
+    </div>
 </div>

@@ -3,27 +3,21 @@
         দ্য ডেইলি নিউজ | প্রিমিয়াম নিউজপেপার টেমপ্লেট
     </x-slot>
 
-    <!-- Breaking News Ticker -->
-    <div class="bg-rose-50 border-y border-rose-100 py-3 mb-8">
-        <div class="container flex items-center gap-4 overflow-hidden">
-            <span class="bg-rose-600 text-white text-[10px] font-black uppercase px-3 py-1 rounded-sm shrink-0">সদ্যপ্রাপ্ত:</span>
-            <div class="text-sm font-semibold text-rose-900 whitespace-nowrap animate-marquee">
-                • কাল থেকে সারা দেশে বৃষ্টির সম্ভাবনা, কমতে পারে তাপমাত্রা • পদ্মা সেতুতে রেকর্ড পরিমাণ টোল আদায় • টি-২০ সিরিজে জয়ের লক্ষ্যে মাঠে নামছে টাইগাররা • প্রযুক্তিতে নতুন চমক নিয়ে আসছে দ্য ডেইলি নিউজ...
-            </div>
+    <!-- Top Advertisement Section -->
+    <div class="py-4 md:py-8 flex justify-center bg-transparent px-4">
+        <div class="container flex justify-center overflow-hidden">
+            <a href="#" class="w-full flex justify-center">
+                <div class="img-placeholder w-full max-w-[1000px]">
+                    <img src="/top-banner.gif" 
+                         alt="Advertisement" 
+                         class="w-full h-auto shadow-sm object-contain" 
+                         onload="this.parentElement.classList.remove('img-placeholder')">
+                </div>
+            </a>
         </div>
     </div>
 
-    <style>
-        @keyframes marquee {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-        }
-        .animate-marquee {
-            display: inline-block;
-            animation: marquee 25s linear infinite;
-        }
-    </style>
-
+    <div class="container">
     <!-- Hero Section -->
     <section class="grid grid-cols-1 lg:grid-cols-[2.7fr_6.3fr_3fr] gap-3 mb-8 border-b border-black pb-8">
         <!-- Left Column: Top Stories -->
@@ -82,8 +76,7 @@
         <!-- Center: Featured News -->
         <div class="">
             <article class="group cursor-pointer">
-                <div class="relative overflow-hidden aspect-[16/9] mb-4">
-                    <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=2070&auto=format&fit=crop" alt="Featured News" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                <div class="img-placeholder relative overflow-hidden aspect-[16/9] mb-4"><img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=2070&auto=format&fit=crop" alt="Featured News" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onload="this.parentElement.classList.remove('img-placeholder')" >
                 </div>
                 <div class="text-center">
                     <h2 class="text-xl md:text-2xl font-semibold serif leading-tight text-center text-title group-hover:text-rose-600 transition-colors">
@@ -98,16 +91,14 @@
             <!-- Sub-featured grid (2 columns) -->
             <div class="grid grid-cols-2 gap-5 mt-4 pt-4 border-t border-black">
                 <div class="group cursor-pointer">
-                    <div class="overflow-hidden aspect-video mb-3">
-                        <img src="https://images.unsplash.com/photo-1493612276216-ee3925520721?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="img-placeholder overflow-hidden aspect-video mb-3"><img src="https://images.unsplash.com/photo-1493612276216-ee3925520721?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                     </div>
                     <h3 class="text-lg font-bold serif leading-snug text-title group-hover:text-rose-600 transition-colors text-left">
                         লেবানন সীমান্তে তুমুল লড়াই, নিহত ১০ ইসরায়েলি সৈন্য
                     </h3>
                 </div>
                 <div class="group cursor-pointer">
-                    <div class="overflow-hidden aspect-video mb-3">
-                        <img src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="img-placeholder overflow-hidden aspect-video mb-3"><img src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                     </div>
                     <h3 class="text-lg font-bold serif leading-snug text-title group-hover:text-rose-600 transition-colors text-left">
                         বাইডেনের কড়া হুঁশিয়ারি, মধ্যপ্রাচ্যে আরও সেনা মোতায়েন
@@ -143,18 +134,16 @@
             <div class="mb-8">
                 <div class="space-y-4">
                     <!-- Ad 1 -->
-                    <div class="group cursor-pointer relative overflow-hidden bg-gray-50 aspect-[4/5]">
-                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=2000&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90 group-hover:opacity-100">
+                    <div class="img-placeholder group cursor-pointer relative overflow-hidden bg-gray-50 aspect-[4/5]"><img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=2000&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90 group-hover:opacity-100" onload="this.parentElement.classList.remove('img-placeholder')" >
                         <div class="absolute inset-0 flex items-center justify-center bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity">
-                            <span class="bg-white/90 backdrop-blur-sm text-black text-[10px] font-bold px-3 py-1 rounded-full uppercase">Shop Now</span>
+                            <span class="bg-white/90 backdrop-blur-sm text-black text-[10px] font-bold px-3 py-1  uppercase">Shop Now</span>
                         </div>
                     </div>
                     
                     <!-- Ad 2 (Square/Horizontal) -->
-                    <div class="group cursor-pointer relative overflow-hidden bg-gray-50 aspect-video">
-                        <img src="https://images.unsplash.com/photo-1491933382434-500287f9b54b?q=80&w=2000&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90 group-hover:opacity-100">
+                    <div class="img-placeholder group cursor-pointer relative overflow-hidden bg-gray-50 aspect-video"><img src="https://images.unsplash.com/photo-1491933382434-500287f9b54b?q=80&w=2000&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90 group-hover:opacity-100" onload="this.parentElement.classList.remove('img-placeholder')" >
                         <div class="absolute inset-0 flex items-center justify-center bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity">
-                            <span class="bg-white/90 backdrop-blur-sm text-black text-[10px] font-bold px-3 py-1 rounded-full uppercase">Learn More</span>
+                            <span class="bg-white/90 backdrop-blur-sm text-black text-[10px] font-bold px-3 py-1  uppercase">Learn More</span>
                         </div>
                     </div>
                 </div>
@@ -166,8 +155,7 @@
                     <!-- Columnist 1 -->
                     <div class="group cursor-pointer">
                         <div class="flex items-center gap-3 mb-2">
-                            <div class="w-15 h-15 rounded-full overflow-hidden border border-gray-200 shrink-0">
-                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=100&h=100&auto=format&fit=crop" alt="Author" class="w-full h-full object-cover">
+                            <div class="img-placeholder w-15 h-15  overflow-hidden border border-gray-200 shrink-0"><img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=100&h=100&auto=format&fit=crop" alt="Author" class="w-full h-full object-cover" onload="this.parentElement.classList.remove('img-placeholder')" >
                             </div>
                             <h4 class="text-lg font-bold text-title leading-snug group-hover:text-rose-600 transition-colors text-left">
                                 পুলিশ ব্যবস্থার বর্তমান বাস্তবতা ও ভবিষ্যৎ পথরেখা
@@ -184,8 +172,7 @@
                     <!-- Columnist 2 -->
                     <div class="group cursor-pointer pt-6 border-t border-gray-100">
                         <div class="flex items-center gap-3 mb-2">
-                            <div class="w-15 h-15 rounded-full overflow-hidden border border-gray-200 shrink-0">
-                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=100&h=100&auto=format&fit=crop" alt="Author" class="w-full h-full object-cover">
+                            <div class="img-placeholder w-15 h-15  overflow-hidden border border-gray-200 shrink-0"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=100&h=100&auto=format&fit=crop" alt="Author" class="w-full h-full object-cover" onload="this.parentElement.classList.remove('img-placeholder')" >
                             </div>
                             <h4 class="text-lg font-bold text-title leading-snug group-hover:text-rose-600 transition-colors text-left">
                                 উচ্চশিক্ষার মানোন্নয়ন ও আগামীর চ্যালেঞ্জ
@@ -202,8 +189,7 @@
                     <!-- Columnist 3 -->
                     <div class="group cursor-pointer pt-6 border-t border-gray-100">
                         <div class="flex items-center gap-3 mb-2">
-                            <div class="w-15 h-15 rounded-full overflow-hidden border border-gray-200 shrink-0">
-                                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=100&h=100&auto=format&fit=crop" alt="Author" class="w-full h-full object-cover">
+                            <div class="img-placeholder w-15 h-15  overflow-hidden border border-gray-200 shrink-0"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=100&h=100&auto=format&fit=crop" alt="Author" class="w-full h-full object-cover" onload="this.parentElement.classList.remove('img-placeholder')" >
                             </div>
                             <h4 class="text-lg font-bold text-title leading-snug group-hover:text-rose-600 transition-colors text-left">
                                 নারীর ক্ষমতায়ন ও সামাজিক বিবর্তন
@@ -235,8 +221,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-10 lg:gap-0 lg:-mx-3">
             <!-- Politics Item 1 -->
             <div class="group cursor-pointer lg:px-3 lg:border-r border-gray-900">
-                <div class="overflow-hidden aspect-video mb-4 relative shadow-sm border border-gray-100">
-                    <img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?q=80&w=2070&auto=format&fit=crop" alt="Politics" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                <div class="img-placeholder overflow-hidden aspect-video mb-4 relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?q=80&w=2070&auto=format&fit=crop" alt="Politics" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                 </div>
                 <h3 class="text-lg font-bold serif leading-snug group-hover:text-rose-600 transition-colors text-left text-title mb-2">
                     নির্বাচনী রোডম্যাপ ঘোষণা করল নির্বাচন কমিশন
@@ -248,8 +233,7 @@
 
             <!-- Politics Item 2 -->
             <div class="group cursor-pointer lg:px-3 lg:border-r border-gray-900">
-                <div class="overflow-hidden aspect-video mb-4 relative shadow-sm border border-gray-100">
-                    <img src="https://images.unsplash.com/photo-1541872703-74c5e443d1f9?q=80&w=2070&auto=format&fit=crop" alt="Politics" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                <div class="img-placeholder overflow-hidden aspect-video mb-4 relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1541872703-74c5e443d1f9?q=80&w=2070&auto=format&fit=crop" alt="Politics" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                 </div>
                 <h3 class="text-lg font-bold serif leading-snug group-hover:text-rose-600 transition-colors text-left text-title mb-2">
                     সরকারের নতুন উন্নয়ন প্রকল্পের অনুমোদন
@@ -261,8 +245,7 @@
 
             <!-- Politics Item 3 -->
             <div class="group cursor-pointer lg:px-3 lg:border-r border-gray-900">
-                <div class="overflow-hidden aspect-video mb-4 relative shadow-sm border border-gray-100">
-                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop" alt="Politics" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                <div class="img-placeholder overflow-hidden aspect-video mb-4 relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop" alt="Politics" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                 </div>
                 <h3 class="text-lg font-bold serif leading-snug group-hover:text-rose-600 transition-colors text-left text-title mb-2">
                     বিরোধী দলের নেতাদের সাথে বৈঠকের আহ্বান
@@ -274,8 +257,7 @@
 
             <!-- Politics Item 4 -->
             <div class="group cursor-pointer lg:px-3">
-                <div class="overflow-hidden aspect-video mb-4 relative shadow-sm border border-gray-100">
-                    <img src="https://images.unsplash.com/photo-1577416416829-d4414004386a?q=80&w=1974&auto=format&fit=crop" alt="Politics" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                <div class="img-placeholder overflow-hidden aspect-video mb-4 relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1577416416829-d4414004386a?q=80&w=1974&auto=format&fit=crop" alt="Politics" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                 </div>
                 <h3 class="text-lg font-bold serif leading-snug group-hover:text-rose-600 transition-colors text-left text-title mb-2">
                     নতুন রাজনৈতিক জোট গঠন, শুরু হচ্ছে আন্দোলন
@@ -299,8 +281,7 @@
             <!-- Left Column (Wide) -->
             <div class="space-y-6">
                 <div class="group cursor-pointer">
-                    <div class="overflow-hidden aspect-[16/10] mb-4 relative shadow-sm border border-gray-100">
-                        <img src="https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?q=80&w=2000&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="img-placeholder overflow-hidden aspect-[16/10] mb-4 relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?q=80&w=2000&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                     </div>
                     <h3 class="text-2xl font-bold serif leading-snug group-hover:text-rose-600 transition-colors text-left text-title mb-3">
                         মেট্রোরেলের নতুন রুট উদ্বোধন: বদলে যাচ্ছে রাজধানীর যাতায়াত দৃশ্যপট
@@ -315,8 +296,7 @@
             <div class="space-y-6 border-x border-gray-100 px-4">
                 <!-- Item 1 -->
                 <div class="group cursor-pointer">
-                    <div class="overflow-hidden aspect-video mb-3 relative shadow-sm border border-gray-100">
-                        <img src="https://images.unsplash.com/photo-1589923188900-85dae523342b?q=80&w=2000&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="img-placeholder overflow-hidden aspect-video mb-3 relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1589923188900-85dae523342b?q=80&w=2000&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                     </div>
                     <h3 class="text-lg font-bold serif leading-snug group-hover:text-rose-600 transition-colors text-left text-title">
                         উপকূলীয় অঞ্চলে লোনা পানি বাড়ছে, হুমকির মুখে কৃষি
@@ -325,8 +305,7 @@
                 
                 <!-- Item 2 -->
                 <div class="pt-3 border-t border-gray-100 group cursor-pointer">
-                    <div class="overflow-hidden aspect-video mb-3 relative shadow-sm border border-gray-100">
-                        <img src="https://images.unsplash.com/photo-1504198453319-5ce911baf2ef?q=80&w=2000&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="img-placeholder overflow-hidden aspect-video mb-3 relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1504198453319-5ce911baf2ef?q=80&w=2000&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                     </div>
                     <h3 class="text-lg font-bold serif leading-snug group-hover:text-rose-600 transition-colors text-left text-title">
                         সারাদেশে ডেঙ্গু পরিস্থিতির অবনতি, হাসপাতালে বাড়ছে ভিড়
@@ -355,8 +334,7 @@
                             ডিজিটাল জনশুমারি: নতুন তথ্যে পাল্টে গেল জনসংখ্যা হিসাব
                         </h4>
                     </div>
-                    <div class="w-20 h-14 overflow-hidden shrink-0 border border-gray-100 shadow-sm">
-                        <img src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="img-placeholder w-20 h-14 overflow-hidden shrink-0 border border-gray-100 shadow-sm"><img src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                     </div>
                 </div>
 
@@ -368,8 +346,7 @@
                             রেমিট্যান্স প্রবাহে জোয়ার: স্বস্তিতে অর্থনীতি ও নতুন সম্ভাবনা
                         </h4>
                     </div>
-                    <div class="w-20 h-14 overflow-hidden shrink-0 border border-gray-100 shadow-sm">
-                        <img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="img-placeholder w-20 h-14 overflow-hidden shrink-0 border border-gray-100 shadow-sm"><img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                     </div>
                 </div>
 
@@ -381,8 +358,7 @@
                             সাভারে তৈরি পোশাক কারখানায় অগ্নিকাণ্ড, নিয়ন্ত্রণে ৫ ইউনিট
                         </h4>
                     </div>
-                    <div class="w-20 h-14 overflow-hidden shrink-0 border border-gray-100 shadow-sm">
-                        <img src="https://images.unsplash.com/photo-1582139329536-e7284fece509?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="img-placeholder w-20 h-14 overflow-hidden shrink-0 border border-gray-100 shadow-sm"><img src="https://images.unsplash.com/photo-1582139329536-e7284fece509?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                     </div>
                 </div>
 
@@ -394,8 +370,7 @@
                             টাকা পাচার রোধে কড়াকড়ি, নজরদারিতে প্রভাবশালীরা
                         </h4>
                     </div>
-                    <div class="w-20 h-14 overflow-hidden shrink-0 border border-gray-100 shadow-sm">
-                        <img src="https://images.unsplash.com/photo-1554224155-1696413565d3?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="img-placeholder w-20 h-14 overflow-hidden shrink-0 border border-gray-100 shadow-sm"><img src="https://images.unsplash.com/photo-1554224155-1696413565d3?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                     </div>
                 </div>
 
@@ -407,8 +382,7 @@
                             সারাদেশে শৈত্যপ্রবাহের পূর্বাভাস, জেঁকে বসতে পারে শীত
                         </h4>
                     </div>
-                    <div class="w-20 h-14 overflow-hidden shrink-0 border border-gray-100 shadow-sm">
-                        <img src="https://images.unsplash.com/photo-1477601263368-1823bb1643df?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="img-placeholder w-20 h-14 overflow-hidden shrink-0 border border-gray-100 shadow-sm"><img src="https://images.unsplash.com/photo-1477601263368-1823bb1643df?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                     </div>
                 </div>
 
@@ -420,8 +394,7 @@
                             বন্যায় ক্ষতিগ্রস্তদের পুনর্বাসনে সরকারের নতুন প্যাকেজ ঘোষণা
                         </h4>
                     </div>
-                    <div class="w-20 h-14 overflow-hidden shrink-0 border border-gray-100 shadow-sm">
-                        <img src="https://images.unsplash.com/photo-1547683905-f686c993aae5?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="img-placeholder w-20 h-14 overflow-hidden shrink-0 border border-gray-100 shadow-sm"><img src="https://images.unsplash.com/photo-1547683905-f686c993aae5?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                     </div>
                 </div>
                 </div>
@@ -435,8 +408,7 @@
                                 বিশ্ববিদ্যালয়গুলোতে ভর্তির নতুন নীতিমালা চূড়ান্ত হচ্ছে
                             </h4>
                         </div>
-                        <div class="w-20 h-14 overflow-hidden shrink-0 border border-gray-100 shadow-sm">
-                            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="img-placeholder w-20 h-14 overflow-hidden shrink-0 border border-gray-100 shadow-sm"><img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                         </div>
                     </div>
                     <div class="group cursor-pointer flex items-start gap-3 pb-3 border-b border-gray-100">
@@ -446,8 +418,7 @@
                                 পদ্মা সেতুতে রেকর্ড যানবাহন, একদিনে আয় ৬ কোটি টাকা
                             </h4>
                         </div>
-                        <div class="w-20 h-14 overflow-hidden shrink-0 border border-gray-100 shadow-sm">
-                            <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="img-placeholder w-20 h-14 overflow-hidden shrink-0 border border-gray-100 shadow-sm"><img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                         </div>
                     </div>
                     <div class="group cursor-pointer flex items-start gap-3 pb-3 border-b border-gray-100">
@@ -457,8 +428,7 @@
                                 টি-টোয়েন্টিতে বাংলাদেশের ঐতিহাসিক জয়, দেশজুড়ে উৎসব
                             </h4>
                         </div>
-                        <div class="w-20 h-14 overflow-hidden shrink-0 border border-gray-100 shadow-sm">
-                            <img src="https://images.unsplash.com/photo-1540747913346-19212a4b32a1?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="img-placeholder w-20 h-14 overflow-hidden shrink-0 border border-gray-100 shadow-sm"><img src="https://images.unsplash.com/photo-1540747913346-19212a4b32a1?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                         </div>
                     </div>
                     <div class="group cursor-pointer flex items-start gap-3 pb-3 border-b border-gray-100">
@@ -468,8 +438,7 @@
                                 দেশে প্রথমবার সরকারি হাসপাতালে রোবোটিক সার্জারি সফল
                             </h4>
                         </div>
-                        <div class="w-20 h-14 overflow-hidden shrink-0 border border-gray-100 shadow-sm">
-                            <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="img-placeholder w-20 h-14 overflow-hidden shrink-0 border border-gray-100 shadow-sm"><img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                         </div>
                     </div>
                     <div class="group cursor-pointer flex items-start gap-3 pb-3 border-b border-gray-100">
@@ -479,8 +448,7 @@
                                 চাঁদপুরে ইলিশ আহরণে নতুন রেকর্ড, কমছে দাম
                             </h4>
                         </div>
-                        <div class="w-20 h-14 overflow-hidden shrink-0 border border-gray-100 shadow-sm">
-                            <img src="https://images.unsplash.com/photo-1559628233-100c798642fd?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="img-placeholder w-20 h-14 overflow-hidden shrink-0 border border-gray-100 shadow-sm"><img src="https://images.unsplash.com/photo-1559628233-100c798642fd?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                         </div>
                     </div>
                     <div class="group cursor-pointer flex items-start gap-3">
@@ -490,8 +458,7 @@
                                 দেশীয় পণ্যের রপ্তানি বেড়েছে ১৮%, নতুন বাজার উন্মোচন
                             </h4>
                         </div>
-                        <div class="w-20 h-14 overflow-hidden shrink-0 border border-gray-100 shadow-sm">
-                            <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="img-placeholder w-20 h-14 overflow-hidden shrink-0 border border-gray-100 shadow-sm"><img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                         </div>
                     </div>
                 </div>
@@ -512,8 +479,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-10 lg:gap-0 lg:-mx-3">
             <!-- Capital Item 1 -->
             <div class="group cursor-pointer lg:px-3 lg:border-r border-gray-900">
-                <div class="overflow-hidden aspect-video mb-4 relative shadow-sm border border-gray-100">
-                    <img src="https://images.unsplash.com/photo-1596422846543-75c6fc183f27?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                <div class="img-placeholder overflow-hidden aspect-video mb-4 relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1596422846543-75c6fc183f27?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                 </div>
                 <h3 class="text-lg font-bold serif leading-snug group-hover:text-rose-600 transition-colors text-left text-title mb-2">
                     রাজধানীর জলাবদ্ধতা নিরসনে নতুন ড্রেনেজ মাস্টারপ্ল্যান
@@ -525,8 +491,7 @@
 
             <!-- Capital Item 2 -->
             <div class="group cursor-pointer lg:px-3 lg:border-r border-gray-900">
-                <div class="overflow-hidden aspect-video mb-4 relative shadow-sm border border-gray-100">
-                    <img src="https://images.unsplash.com/photo-1555620201-dcae47bb0bc6?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                <div class="img-placeholder overflow-hidden aspect-video mb-4 relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1555620201-dcae47bb0bc6?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                 </div>
                 <h3 class="text-lg font-bold serif leading-snug group-hover:text-rose-600 transition-colors text-left text-title mb-2">
                     বায়ু দূষণে আবারও শীর্ষে ঢাকা, স্বাস্থ্য ঝুঁকির সতর্কতা
@@ -538,8 +503,7 @@
 
             <!-- Capital Item 3 -->
             <div class="group cursor-pointer lg:px-3 lg:border-r border-gray-900">
-                <div class="overflow-hidden aspect-video mb-4 relative shadow-sm border border-gray-100">
-                    <img src="https://images.unsplash.com/photo-1570126618953-d437176e8c79?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                <div class="img-placeholder overflow-hidden aspect-video mb-4 relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1570126618953-d437176e8c79?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                 </div>
                 <h3 class="text-lg font-bold serif leading-snug group-hover:text-rose-600 transition-colors text-left text-title mb-2">
                     হাতিরঝিলে নতুন বিনোদন কেন্দ্র গড়ে তোলার পরিকল্পনা
@@ -551,8 +515,7 @@
 
             <!-- Capital Item 4 -->
             <div class="group cursor-pointer lg:px-3">
-                <div class="overflow-hidden aspect-video mb-4 relative shadow-sm border border-gray-100">
-                    <img src="https://images.unsplash.com/photo-1621245104033-68d277761034?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                <div class="img-placeholder overflow-hidden aspect-video mb-4 relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1621245104033-68d277761034?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                 </div>
                 <h3 class="text-lg font-bold serif leading-snug group-hover:text-rose-600 transition-colors text-left text-title mb-2">
                     পুরান ঢাকার ঐতিহ্য রক্ষায় শুরু হচ্ছে সংস্কার কাজ
@@ -579,8 +542,7 @@
             <div class="lg:px-3 lg:border-r border-gray-900 space-y-6">
                 <!-- Large Featured Item -->
                 <div class="group cursor-pointer pb-6 border-b border-gray-100">
-                    <div class="overflow-hidden aspect-video mb-2 relative shadow-sm border border-gray-100">
-                        <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="img-placeholder overflow-hidden aspect-video mb-2 relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                     </div>
                     <h3 class="text-2xl font-bold serif leading-snug group-hover:text-rose-600 transition-colors text-left text-title mb-1">
                        উত্তর কোরিয়াকে রুখতে প্রস্তুত লাল-সবুজের মেয়েরা, বাটলার বললেন-‘আই হ্যাভ আ প্ল্যান’
@@ -593,8 +555,7 @@
                 <!-- Secondary Item (Middle Column Style) -->
                 <div class="group cursor-pointer">
                     <div class="flex gap-4 mb-2">
-                        <div class="w-32 h-20 shrink-0 overflow-hidden border border-gray-100 shadow-sm">
-                            <img src="https://images.unsplash.com/photo-1518063319789-7217e6706b04?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="img-placeholder w-32 h-20 shrink-0 overflow-hidden border border-gray-100 shadow-sm"><img src="https://images.unsplash.com/photo-1518063319789-7217e6706b04?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                         </div>
                         <h4 class="text-lg font-semibold serif leading-tight group-hover:text-rose-600 transition-colors text-left text-title mt-0.5">
                             টেনিস: অস্ট্রেলিয়ান ওপেনের ফাইনালে মুখোমুখি নোভাক ও রাফা
@@ -611,8 +572,7 @@
                 <!-- Item 2.1 -->
                 <div class="group cursor-pointer pb-5 border-b border-gray-100 last:border-0 last:pb-0">
                     <div class="flex gap-4 mb-2">
-                        <div class="w-32 h-20 shrink-0 overflow-hidden border border-gray-100 shadow-sm">
-                            <img src="https://images.unsplash.com/photo-1540747913346-19e3ad643662?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="img-placeholder w-32 h-20 shrink-0 overflow-hidden border border-gray-100 shadow-sm"><img src="https://images.unsplash.com/photo-1540747913346-19e3ad643662?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                         </div>
                         <h4 class="text-lg font-bold serif leading-tight group-hover:text-rose-600 transition-colors text-left text-title mt-0.5">
                             আইপিএল নিলামে ইতিহাস গড়লেন বাংলাদেশের তরুণ পেসার
@@ -626,8 +586,7 @@
                 <!-- Item 2.2 -->
                 <div class="group cursor-pointer pb-5 border-b border-gray-100 last:border-0 last:pb-0">
                     <div class="flex gap-4 mb-2">
-                        <div class="w-32 h-20 shrink-0 overflow-hidden border border-gray-100 shadow-sm">
-                            <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="img-placeholder w-32 h-20 shrink-0 overflow-hidden border border-gray-100 shadow-sm"><img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                         </div>
                         <h4 class="text-lg font-bold serif leading-tight group-hover:text-rose-600 transition-colors text-left text-title mt-0.5">
                             পিএসজি ছেড়ে মায়ামিতেই থাকছেন মেসি, নিশ্চিত করল ক্লাব
@@ -641,8 +600,7 @@
                 <!-- Item 2.3 -->
                 <div class="group cursor-pointer">
                     <div class="flex gap-4 mb-2">
-                        <div class="w-32 h-20 shrink-0 overflow-hidden border border-gray-100 shadow-sm">
-                            <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="img-placeholder w-32 h-20 shrink-0 overflow-hidden border border-gray-100 shadow-sm"><img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                         </div>
                         <h4 class="text-lg font-bold serif leading-tight group-hover:text-rose-600 transition-colors text-left text-title mt-0.5">
                             ওলিম্পিক গেমসের প্রস্তুতিতে মুখরিত প্যারিস, নিরাপত্তা জোরদার
@@ -658,8 +616,7 @@
             <div class="lg:px-3 space-y-5">
                 <!-- Right Item 1 -->
                 <div class="group cursor-pointer flex gap-4 pb-4 border-b border-gray-100 last:border-0 last:pb-0">
-                    <div class="w-32 h-20 shrink-0 overflow-hidden border border-gray-100 shadow-sm">
-                        <img src="https://images.unsplash.com/photo-1575361204480-aadea25e6e68?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="img-placeholder w-32 h-20 shrink-0 overflow-hidden border border-gray-100 shadow-sm"><img src="https://images.unsplash.com/photo-1575361204480-aadea25e6e68?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                     </div>
                     <h4 class="text-lg font-bold serif leading-snug group-hover:text-rose-600 transition-colors text-left text-title">
                         বিপিএলের নতুন সূচি ঘোষণা, উদ্বোধনী ম্যাচে মুখোমুখি ঢাকা-কুমিল্লা
@@ -667,8 +624,7 @@
                 </div>
                 <!-- Right Item 2 -->
                 <div class="group cursor-pointer flex gap-4 pb-4 border-b border-gray-100 last:border-0 last:pb-0">
-                    <div class="w-32 h-20 shrink-0 overflow-hidden border border-gray-100 shadow-sm">
-                        <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="img-placeholder w-32 h-20 shrink-0 overflow-hidden border border-gray-100 shadow-sm"><img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                     </div>
                     <h4 class="text-lg font-bold serif leading-snug group-hover:text-rose-600 transition-colors text-left text-title">
                         সাফ চ্যাম্পিয়নশিপ: সেমিফাইনালের লক্ষ্যে কাল মাঠে নামবে সাবিনারা
@@ -676,8 +632,7 @@
                 </div>
                 <!-- Right Item 3 -->
                 <div class="group cursor-pointer flex gap-4 pb-4 border-b border-gray-100 last:border-0 last:pb-0">
-                    <div class="w-32 h-20 shrink-0 overflow-hidden border border-gray-100 shadow-sm">
-                        <img src="https://images.unsplash.com/photo-1560272564-c83b66b1ad12?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="img-placeholder w-32 h-20 shrink-0 overflow-hidden border border-gray-100 shadow-sm"><img src="https://images.unsplash.com/photo-1560272564-c83b66b1ad12?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                     </div>
                     <h4 class="text-lg font-bold serif leading-snug group-hover:text-rose-600 transition-colors text-left text-title">
                         প্রিমিয়ার লিগ: আর্সেনালকে হারিয়ে শীর্ষে ফিরল ম্যানচেস্টার সিটি
@@ -685,8 +640,7 @@
                 </div>
                 <!-- Right Item 4 -->
                 <div class="group cursor-pointer flex gap-4 last:border-0 last:pb-0">
-                    <div class="w-32 h-20 shrink-0 overflow-hidden border border-gray-100 shadow-sm">
-                        <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="img-placeholder w-32 h-20 shrink-0 overflow-hidden border border-gray-100 shadow-sm"><img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                     </div>
                     <h4 class="text-lg font-bold serif leading-snug group-hover:text-rose-600 transition-colors text-left text-title">
                         চ্যাম্পিয়ন্স লিগ: শেষ মুহূর্তের গোলে নাটকীয় জয় রিয়ালের
@@ -714,8 +668,7 @@
                     <!-- Featured (6 Columns) -->
                     <div class="lg:col-span-6 lg:px-3 lg:border-r border-gray-900 mb-6 lg:mb-0">
                         <div class="group cursor-pointer">
-                            <div class="overflow-hidden aspect-video mb-4 relative shadow-sm border border-gray-100">
-                                <img src="https://images.unsplash.com/photo-1585647347384-2593bc35786b?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="img-placeholder overflow-hidden aspect-video mb-4 relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1585647347384-2593bc35786b?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                             </div>
                             <h3 class="text-3xl font-bold serif leading-tight group-hover:text-rose-600 transition-colors text-left text-title mb-4">
                                 সিলেটে চাবাগানগুলোয় হাসি ফুটেছে শ্রমিকদের মুখে, উৎপাদন ছাড়িয়েছে লক্ষ্যমাত্রা
@@ -730,8 +683,7 @@
                     <div class="lg:col-span-3 lg:px-3 space-y-3">
                         <!-- Middle Item 1 -->
                         <div class="group cursor-pointer pb-4 border-b border-gray-100">
-                            <div class="overflow-hidden aspect-video mb-4 relative shadow-sm border border-gray-100">
-                                <img src="https://images.unsplash.com/photo-1594391484110-305898089201?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="img-placeholder overflow-hidden aspect-video mb-4 relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1594391484110-305898089201?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                             </div>
                             <h4 class="text-xl font-bold serif leading-snug group-hover:text-rose-600 transition-colors text-left text-title">
                                 বরগুনায় ইলিশের অভাব ঘুচছে, বাজারে প্রচুর সরবরাহ
@@ -739,8 +691,7 @@
                         </div>
                         <!-- Middle Item 2 -->
                         <div class="group cursor-pointer">
-                            <div class="overflow-hidden aspect-video mb-4 relative shadow-sm border border-gray-100">
-                                <img src="https://images.unsplash.com/photo-1508962914676-134849a727f0?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="img-placeholder overflow-hidden aspect-video mb-4 relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1508962914676-134849a727f0?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                             </div>
                             <h4 class="text-xl font-bold serif leading-snug group-hover:text-rose-600 transition-colors text-left text-title">
                                 রাজশাহীর আম যাচ্ছে ইউরোপে, গর্বিত স্থানীয় আমচাষিরা
@@ -754,8 +705,7 @@
                     <!-- Bottom Item 1 -->
                     <div class="">
                         <div class="group cursor-pointer">
-                            <div class="overflow-hidden aspect-video mb-2 relative shadow-sm border border-gray-100">
-                                <img src="https://images.unsplash.com/photo-1566378246598-5b11a0ff7f6c?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="img-placeholder overflow-hidden aspect-video mb-2 relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1566378246598-5b11a0ff7f6c?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                             </div>
                             <h4 class="text-lg font-bold serif leading-snug group-hover:text-rose-600 transition-colors text-left text-title">
                                 পটুয়াখালীতে নতুন বিমানবন্দর নির্মাণের কাজ এগিয়ে চলছে দ্রুতগতিতে
@@ -765,8 +715,7 @@
                     <!-- Bottom Item 2 -->
                     <div class="">
                         <div class="group cursor-pointer">
-                            <div class="overflow-hidden aspect-video mb-2 relative shadow-sm border border-gray-100">
-                                <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="img-placeholder overflow-hidden aspect-video mb-2 relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                             </div>
                             <h4 class="text-lg font-bold serif leading-snug group-hover:text-rose-600 transition-colors text-left text-title">
                                 চট্টগ্রামে পাহাড় রক্ষা অভিযানে অবৈধ স্থাপনা উচ্ছেদ, জেল-জরিমানা
@@ -776,8 +725,7 @@
                     <!-- Bottom Item 3 -->
                     <div class="">
                         <div class="group cursor-pointer">
-                            <div class="overflow-hidden aspect-video mb-2 relative shadow-sm border border-gray-100">
-                                <img src="https://images.unsplash.com/photo-1596401057633-5310bad1d5f6?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="img-placeholder overflow-hidden aspect-video mb-2 relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1596401057633-5310bad1d5f6?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                             </div>
                             <h4 class="text-lg font-bold serif leading-snug group-hover:text-rose-600 transition-colors text-left text-title">
                                 বগুড়ার দই এখন সারাবিশ্বে সমাদৃত, রপ্তানি বাড়ছে পাল্লা দিয়ে
@@ -789,7 +737,7 @@
 
             <!-- Right Column: Regional News Search (3 Columns) -->
             <div class="lg:col-span-3 lg:px-3 lg:border-l border-gray-900">
-                <div class="bg-gray-50 p-6 rounded-sm border border-gray-100 shadow-sm">
+                <div class="bg-gray-50 p-6  border border-gray-100 shadow-sm">
                     <h3 class="text-xl font-bold serif text-title mb-6 border-b pb-2 border-rose-600 inline-block">
                         এলাকার খবর
                     </h3>
@@ -798,7 +746,7 @@
                         <!-- Division -->
                         <div>
                             <label class="block text-sm font-bold text-gray-700 mb-1">বিভাগ</label>
-                            <select class="w-full border-gray-200 rounded-sm text-sm focus:ring-rose-500 focus:border-rose-500 py-2.5 bg-white">
+                            <select class="w-full border-gray-200  text-sm focus:ring-rose-500 focus:border-rose-500 py-2.5 bg-white">
                                 <option>বিভাগ নির্বাচন করুন</option>
                                 <option>ঢাকা</option>
                                 <option>চট্টগ্রাম</option>
@@ -814,7 +762,7 @@
                         <!-- District -->
                         <div>
                             <label class="block text-sm font-bold text-gray-700 mb-1">জেলা</label>
-                            <select class="w-full border-gray-200 rounded-sm text-sm focus:ring-rose-500 focus:border-rose-500 py-2.5 bg-white">
+                            <select class="w-full border-gray-200  text-sm focus:ring-rose-500 focus:border-rose-500 py-2.5 bg-white">
                                 <option>জেলা নির্বাচন করুন</option>
                             </select>
                         </div>
@@ -822,13 +770,13 @@
                         <!-- Upazila -->
                         <div>
                             <label class="block text-sm font-bold text-gray-700 mb-1">উপজেলা</label>
-                            <select class="w-full border-gray-200 rounded-sm text-sm focus:ring-rose-500 focus:border-rose-500 py-2.5 bg-white">
+                            <select class="w-full border-gray-200  text-sm focus:ring-rose-500 focus:border-rose-500 py-2.5 bg-white">
                                 <option>উপজেলা নির্বাচন করুন</option>
                             </select>
                         </div>
 
                         <!-- Search Button -->
-                        <button type="submit" class="w-full bg-rose-600 hover:bg-rose-700 text-white font-bold py-3 rounded-sm transition-colors mt-4 shadow-md flex items-center justify-center gap-2">
+                        <button type="submit" class="w-full bg-rose-600 hover:bg-rose-700 text-white font-bold py-3  transition-colors mt-4 shadow-md flex items-center justify-center gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                                 <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
                             </svg>
@@ -853,8 +801,7 @@
             <!-- World News: Featured (5.25 Columns) -->
             <div class="lg:px-3 lg:border-r border-gray-900">
                 <div class="group cursor-pointer">
-                    <div class="overflow-hidden aspect-video mb-2 relative shadow-sm border border-gray-100">
-                        <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?q=80&w=2066&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="img-placeholder overflow-hidden aspect-video mb-2 relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?q=80&w=2066&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                     </div>
                     <h3 class="text-2xl font-bold serif leading-tight group-hover:text-rose-600 transition-colors text-left text-title mb-2">
                         জলবায়ু সম্মেলনে ঐতিহাসিক চুক্তি: কার্বন নিঃসরণ হ্রাসে একমত ২০টি দেশ
@@ -869,8 +816,7 @@
             <div class="lg:px-3 lg:border-r border-gray-900 space-y-3">
                 <!-- Middle Item 1 -->
                 <div class="group cursor-pointer pb-4 border-b border-gray-100 last:border-0 last:pb-0">
-                    <div class="overflow-hidden aspect-video mb-3 relative shadow-sm border border-gray-100">
-                        <img src="https://images.unsplash.com/photo-1577017040065-650ee4d43339?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="img-placeholder overflow-hidden aspect-video mb-3 relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1577017040065-650ee4d43339?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                     </div>
                     <h4 class="text-lg font-bold serif leading-snug group-hover:text-rose-600 transition-colors text-left text-title">
                         মধ্যপ্রাচ্যে নতুন শান্তি আলোচনার উদ্যোগ নিলো জাতিসংঘ
@@ -878,8 +824,7 @@
                 </div>
                 <!-- Middle Item 2 -->
                 <div class="group cursor-pointer pb-6 border-b border-gray-100 last:border-0 last:pb-0">
-                    <div class="overflow-hidden aspect-video mb-3 relative shadow-sm border border-gray-100">
-                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="img-placeholder overflow-hidden aspect-video mb-3 relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                     </div>
                     <h4 class="text-lg font-bold serif leading-snug group-hover:text-rose-600 transition-colors text-left text-title">
                         কৃত্রিম বুদ্ধিমত্তা নিয়ন্ত্রণে ইউরোপীয় ইউনিয়নে নতুন আইন পাস
@@ -891,8 +836,7 @@
             <div class="lg:px-3 space-y-3">
                 <!-- Right Item 1 -->
                 <div class="group cursor-pointer pb-3 border-b border-gray-100 last:border-0 last:pb-0 flex gap-4">
-                    <div class="w-36 h-24 shrink-0 overflow-hidden relative shadow-sm border border-gray-100">
-                        <img src="https://images.unsplash.com/photo-1451187534959-425632749c8d?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="img-placeholder w-36 h-24 shrink-0 overflow-hidden relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1451187534959-425632749c8d?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                     </div>
                     <h4 class="text-lg font-bold serif leading-snug group-hover:text-rose-600 transition-colors text-left text-title">
                         চাঁদে বসতি স্থাপনের লক্ষ্যে নাসার নতুন অভিযান শুরু
@@ -900,8 +844,7 @@
                 </div>
                 <!-- Right Item 2 -->
                 <div class="group cursor-pointer pb-3 border-b border-gray-100 last:border-0 last:pb-0 flex gap-4">
-                    <div class="w-36 h-24 shrink-0 overflow-hidden relative shadow-sm border border-gray-100">
-                        <img src="https://images.unsplash.com/photo-1621245104033-68d277761034?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="img-placeholder w-36 h-24 shrink-0 overflow-hidden relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1621245104033-68d277761034?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                     </div>
                     <h4 class="text-lg font-bold serif leading-snug group-hover:text-rose-600 transition-colors text-left text-title">
                         বৈশ্বিক মন্দা কাটিয়ে প্রবৃদ্ধির পথে ফিরছে এশিয়ার অর্থনীতি
@@ -909,8 +852,7 @@
                 </div>
                 <!-- Right Item 3 -->
                 <div class="group cursor-pointer pb-3 border-b border-gray-100 last:border-0 last:pb-0 flex gap-4">
-                    <div class="w-36 h-24 shrink-0 overflow-hidden relative shadow-sm border border-gray-100">
-                        <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="img-placeholder w-36 h-24 shrink-0 overflow-hidden relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                     </div>
                     <h4 class="text-lg font-bold serif leading-snug group-hover:text-rose-600 transition-colors text-left text-title">
                          পরিবেশ রক্ষায় কৃত্রিম বন তৈরিতে জাপানের সাফল্য
@@ -918,8 +860,7 @@
                 </div>
                 <!-- Right Item 4 -->
                 <div class="group cursor-pointer pb-3 border-b border-gray-100 last:border-0 last:pb-0 flex gap-4">
-                    <div class="w-36 h-24 shrink-0 overflow-hidden relative shadow-sm border border-gray-100">
-                        <img src="https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="img-placeholder w-36 h-24 shrink-0 overflow-hidden relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                     </div>
                     <h4 class="text-lg font-bold serif leading-snug group-hover:text-rose-600 transition-colors text-left text-title">
                         ইউক্রেন ট্রাস্ট ফান্ডের জন্য ইউরোপীয় ইউনিয়নের বড় ঘোষণা
@@ -943,8 +884,7 @@
             <div class="lg:px-3 lg:border-r border-gray-900 space-y-4">
                 <!-- Item 1 -->
                 <div class="group cursor-pointer pb-3 border-b border-gray-100 last:border-0 flex gap-4">
-                    <div class="w-40 h-23 shrink-0 overflow-hidden relative shadow-sm border border-gray-100">
-                        <img src="https://images.unsplash.com/photo-1493225255756-d9584f8606e9?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="img-placeholder w-40 h-23 shrink-0 overflow-hidden relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1493225255756-d9584f8606e9?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                     </div>
                     <h4 class="text-lg font-bold serif leading-snug group-hover:text-rose-600 transition-colors text-left text-title">
                       ইন্টারভিউ থেকে বিরত থাকতে চাই, বলি একটা লিখে আরেকটা: রবি চৌধুরী
@@ -953,8 +893,7 @@
                 </div>
                 <!-- Item 2 -->
                 <div class="group cursor-pointer pb-3 border-b border-gray-100 last:border-0 flex gap-4">
-                    <div class="w-40 h-23 shrink-0 overflow-hidden relative shadow-sm border border-gray-100">
-                        <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="img-placeholder w-40 h-23 shrink-0 overflow-hidden relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                     </div>
                     <h4 class="text-lg font-bold serif leading-snug group-hover:text-rose-600 transition-colors text-left text-title">
                         কান চলচ্চিত্র উৎসবে প্রশংসিত বাংলাদেশী সিনেমা 'রেহানা'
@@ -962,16 +901,14 @@
                 </div>
                 <!-- Item 3 -->
                 <div class="group cursor-pointer pb-3 border-b border-gray-100 last:border-0 flex gap-4">
-                    <div class="w-40 h-23 shrink-0 overflow-hidden relative shadow-sm border border-gray-100">
-                        <img src="https://images.unsplash.com/photo-1598899464044-8c0f1d429a4a?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="img-placeholder w-40 h-23 shrink-0 overflow-hidden relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1598899464044-8c0f1d429a4a?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                     </div>
                     <h4 class="text-lg font-bold serif leading-snug group-hover:text-rose-600 transition-colors text-left text-title">
                         বলিউডে পা রাখছেন দক্ষিণ ভারতের জনপ্রিয় নায়িকা রশ্মিকা
                     </h4>
                 </div>
                 <div class="group cursor-pointer pb-3 border-b border-gray-100 last:border-0 flex gap-4">
-                    <div class="w-40 h-23 shrink-0 overflow-hidden relative shadow-sm border border-gray-100">
-                        <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="img-placeholder w-40 h-23 shrink-0 overflow-hidden relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                     </div>
                     <h4 class="text-lg font-bold serif leading-snug group-hover:text-rose-600 transition-colors text-left text-title">
                         ডিসেম্বরে নতুন সিনেমা নিয়ে আসছেন ঢাকাই সিনেমার কিং খান
@@ -982,8 +919,7 @@
             <!-- Middle Column: Featured Vertical Item -->
             <div class="lg:px-3 lg:border-r  border-gray-900">
                 <div class="group cursor-pointer">
-                    <div class="overflow-hidden h-84 mb-3 relative shadow-sm border border-gray-100">
-                        <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="img-placeholder overflow-hidden h-84 mb-3 relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                     </div>
                     <h3 class="text-2xl font-bold serif leading-tight group-hover:text-rose-600 transition-colors text-left text-title mb-2">
                         অস্কারের দৌঁড়ে এগিয়ে যে সিনেমাগুলো, কার মুখে হাসি ফুটবে শেষ পর্যন্ত?
@@ -998,8 +934,7 @@
             <div class="lg:px-3 space-y-4">
                 <!-- Item 1 -->
                 <div class="group cursor-pointer pb-3 border-b border-gray-100 last:border-0 flex gap-4">
-                    <div class="w-40 h-23 shrink-0 overflow-hidden relative shadow-sm border border-gray-100">
-                        <img src="https://images.unsplash.com/photo-1511730991916-16629ec237b6?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="img-placeholder w-40 h-23 shrink-0 overflow-hidden relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1511730991916-16629ec237b6?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                     </div>
                     <h4 class="text-lg font-bold serif leading-snug group-hover:text-rose-600 transition-colors text-left text-title">
                         ছোট পর্দায় ফিরছেন মেহজাবীন, শুরু করেছেন নতুন নাটকের শুটিং
@@ -1007,8 +942,7 @@
                 </div>
                 <!-- Item 2 -->
                 <div class="group cursor-pointer pb-3 border-b border-gray-100 last:border-0 flex gap-4">
-                    <div class="w-40 h-23 shrink-0 overflow-hidden relative shadow-sm border border-gray-100">
-                        <img src="https://images.unsplash.com/photo-1514525253361-b5508ef19d7d?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="img-placeholder w-40 h-23 shrink-0 overflow-hidden relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1514525253361-b5508ef19d7d?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                     </div>
                     <h4 class="text-lg font-bold serif leading-snug group-hover:text-rose-600 transition-colors text-left text-title">
                         কনসার্টে গান গাইতে গাইতে মঞ্চেই কান্নায় ভেঙে পড়লেন আরজিৎ সিং
@@ -1016,16 +950,14 @@
                 </div>
                 <!-- Item 3 -->
                 <div class="group cursor-pointer pb-3 border-b border-gray-100 last:border-0 flex gap-4">
-                    <div class="w-40 h-23 shrink-0 overflow-hidden relative shadow-sm border border-gray-100">
-                        <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="img-placeholder w-40 h-23 shrink-0 overflow-hidden relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                     </div>
                     <h4 class="text-lg font-bold serif leading-snug group-hover:text-rose-600 transition-colors text-left text-title">
                         ডিসেম্বরে নতুন সিনেমা নিয়ে আসছেন ঢাকাই সিনেমার কিং খান
                     </h4>
                 </div>
             <div class="group cursor-pointer pb-3 border-b border-gray-100 last:border-0 flex gap-4">
-                    <div class="w-40 h-23 shrink-0 overflow-hidden relative shadow-sm border border-gray-100">
-                        <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="img-placeholder w-40 h-23 shrink-0 overflow-hidden relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                     </div>
                     <h4 class="text-lg font-bold serif leading-snug group-hover:text-rose-600 transition-colors text-left text-title">
                         কান চলচ্চিত্র উৎসবে প্রশংসিত বাংলাদেশী সিনেমা 'রেহানা'
@@ -1045,8 +977,7 @@
                 
                 <!-- Lifestyle: Featured -->
                 <div class="group cursor-pointer mb-3">
-                    <div class="overflow-hidden aspect-video mb-3 relative shadow-sm border border-gray-100">
-                        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="img-placeholder overflow-hidden aspect-video mb-3 relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                     </div>
                     <h4 class="text-xl font-bold serif leading-snug group-hover:text-rose-600 transition-colors text-left text-title">
                         সুস্থ থাকতে প্রতিদিনের খাবারের তালিকায় রাখুন এই পাঁচটি খাবার
@@ -1056,24 +987,21 @@
                 <!-- Lifestyle: List -->
                 <div class="space-y-2 border-t border-gray-100 pt-2">
                     <div class="group cursor-pointer flex gap-3 pb-2 border-b border-gray-100 last:border-0 last:pb-0">
-                        <div class="w-40 h-23 shrink-0 overflow-hidden relative shadow-sm border border-gray-100">
-                            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="img-placeholder w-40 h-23 shrink-0 overflow-hidden relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                         </div>
                         <h5 class="text-lg font-semibold serif leading-snug group-hover:text-rose-600 transition-colors text-left text-title">
                             গৃহসজ্জায় ইনডোর প্ল্যান্টের ব্যবহার যেভাবে করবেন
                         </h5>
                     </div>
                     <div class="group cursor-pointer flex gap-3 pb-2 border-b border-gray-100 last:border-0 last:pb-0">
-                        <div class="w-40 h-23 shrink-0 overflow-hidden relative shadow-sm border border-gray-100">
-                            <img src="https://images.unsplash.com/photo-1445205170230-053b830c6050?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="img-placeholder w-40 h-23 shrink-0 overflow-hidden relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1445205170230-053b830c6050?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                         </div>
                         <h5 class="text-lg font-semibold serif leading-snug group-hover:text-rose-600 transition-colors text-left text-title">
                             শীতকালীন ফ্যাশনে নজরকাড়া কিছু টিপস
                         </h5>
                     </div>
                     <div class="group cursor-pointer flex gap-3 pb-2 border-b border-gray-100 last:border-0 last:pb-0">
-                        <div class="w-40 h-23 shrink-0 overflow-hidden relative shadow-sm border border-gray-100">
-                            <img src="https://images.unsplash.com/photo-1501555088652-021faa106b9b?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="img-placeholder w-40 h-23 shrink-0 overflow-hidden relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1501555088652-021faa106b9b?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                         </div>
                         <h5 class="text-lg font-semibold serif leading-snug group-hover:text-rose-600 transition-colors text-left text-title">
                             ভ্রমণে সাবধানতা: শীতকালে পাহাড়ে যাওয়ার আগে যা জানবেন
@@ -1090,8 +1018,7 @@
                 
                 <!-- Tech: Featured -->
                 <div class="group cursor-pointer mb-3">
-                    <div class="overflow-hidden aspect-video mb-3 relative shadow-sm border border-gray-100">
-                        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="img-placeholder overflow-hidden aspect-video mb-3 relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                     </div>
                     <h4 class="text-xl font-bold serif leading-snug group-hover:text-rose-600 transition-colors text-left text-title">
                         ভবিষ্যৎ প্রযুক্তি: এআই যেভাবে আমাদের জীবন বদলে দিচ্ছে
@@ -1101,24 +1028,21 @@
                 <!-- Tech: List -->
                 <div class="space-y-2 border-t border-gray-100 pt-2">
                     <div class="group cursor-pointer flex gap-3 pb-2 border-b border-gray-100 last:border-0 last:pb-0">
-                        <div class="w-40 h-23 shrink-0 overflow-hidden relative shadow-sm border border-gray-100">
-                            <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="img-placeholder w-40 h-23 shrink-0 overflow-hidden relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                         </div>
                         <h5 class="text-lg font-semibold serif leading-snug group-hover:text-rose-600 transition-colors text-left text-title">
                             অ্যাপল আনছে তাদের পরবর্তী প্রজন্মের ভাঁজযোগ্য স্মার্টফোন
                         </h5>
                     </div>
                     <div class="group cursor-pointer flex gap-3 pb-2 border-b border-gray-100 last:border-0 last:pb-0">
-                        <div class="w-40 h-23 shrink-0 overflow-hidden relative shadow-sm border border-gray-100">
-                            <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="img-placeholder w-40 h-23 shrink-0 overflow-hidden relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                         </div>
                         <h5 class="text-lg font-semibold serif leading-snug group-hover:text-rose-600 transition-colors text-left text-title">
                             বাজেটের মধ্যে সেরা পাঁচটি ল্যাপটপের খোঁজ
                         </h5>
                     </div>
                     <div class="group cursor-pointer flex gap-3 pb-2 border-b border-gray-100 last:border-0 last:pb-0">
-                        <div class="w-40 h-23 shrink-0 overflow-hidden relative shadow-sm border border-gray-100">
-                            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="img-placeholder w-40 h-23 shrink-0 overflow-hidden relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                         </div>
                         <h5 class="text-lg font-semibold serif leading-snug group-hover:text-rose-600 transition-colors text-left text-title">
                             সাশ্রীয়ী মূল্যে সেরা পাঁচটি স্মার্টওয়াচ এখন বাজারে
@@ -1135,8 +1059,7 @@
                 
                 <!-- Different Eyes: Featured -->
                 <div class="group cursor-pointer mb-3">
-                    <div class="overflow-hidden aspect-video mb-3 relative shadow-sm border border-gray-100">
-                        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="img-placeholder overflow-hidden aspect-video mb-3 relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                     </div>
                     <h4 class="text-xl font-bold serif leading-snug group-hover:text-rose-600 transition-colors text-left text-title">
                         সবুজ পাহাড়ের কোলে ছোট্ট এক গ্রাম, যেখানে সময় থমকে আছে
@@ -1146,24 +1069,21 @@
                 <!-- Different Eyes: List -->
                 <div class="space-y-2 border-t border-gray-100 pt-2">
                     <div class="group cursor-pointer flex gap-3 pb-2 border-b border-gray-100 last:border-0 last:pb-0">
-                        <div class="w-40 h-23 shrink-0 overflow-hidden relative shadow-sm border border-gray-100">
-                            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="img-placeholder w-40 h-23 shrink-0 overflow-hidden relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                         </div>
                         <h5 class="text-lg font-semibold serif leading-snug group-hover:text-rose-600 transition-colors text-left text-title">
                             হারিয়ে যাওয়া লোককলা: যে শিল্প আজ প্রায় বিলুপ্তির পথে
                         </h5>
                     </div>
                     <div class="group cursor-pointer flex gap-3 pb-2 border-b border-gray-100 last:border-0 last:pb-0">
-                        <div class="w-40 h-23 shrink-0 overflow-hidden relative shadow-sm border border-gray-100">
-                            <img src="https://images.unsplash.com/photo-1433086566547-0230f2df24e4?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="img-placeholder w-40 h-23 shrink-0 overflow-hidden relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1433086566547-0230f2df24e4?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                         </div>
                         <h5 class="text-lg font-semibold serif leading-snug group-hover:text-rose-600 transition-colors text-left text-title">
                             সমুদ্রের অতল গহ্বরে লুকিয়ে থাকা অদ্ভুত কিছু প্রাণী
                         </h5>
                     </div>
                     <div class="group cursor-pointer flex gap-3 pb-2 border-b border-gray-100 last:border-0 last:pb-0">
-                        <div class="w-40 h-23 shrink-0 overflow-hidden relative shadow-sm border border-gray-100">
-                            <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="img-placeholder w-40 h-23 shrink-0 overflow-hidden relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                         </div>
                         <h5 class="text-lg font-semibold serif leading-snug group-hover:text-rose-600 transition-colors text-left text-title">
                             অজানাকে জানা: আমাজনের গহীন জঙ্গলে লুকানো রহস্য
@@ -1187,34 +1107,29 @@
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-3">
                 <!-- Col 1: Big Vertical -->
                 <div class="group cursor-pointer lg:border-r border-gray-100 lg:pr-3">
-                    <div class="overflow-hidden h-86 mb-2 relative shadow-sm border border-gray-100">
-                        <img src="https://images.unsplash.com/photo-1529156069811-37f227566197?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="img-placeholder overflow-hidden h-86 mb-2 relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1529156069811-37f227566197?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                     </div>
                     <h4 class="text-2xl font-bold serif leading-snug group-hover:text-rose-600 transition-colors">তরুণদের হাত ধরেই বদলে যাচ্ছে বাংলাদেশের স্টার্টআপ ইকোসিস্টেম</h4>
                 </div>
                 <!-- Col 2: Horizontal List -->
                 <div class="space-y-3 lg:border-r border-gray-100 lg:pr-3">
                     <div class="group cursor-pointer flex gap-4 pb-3 border-b border-gray-100 last:border-0 last:pb-0">
-                        <div class="w-32 h-18 shrink-0 overflow-hidden relative shadow-sm border border-gray-100">
-                            <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="img-placeholder w-32 h-18 shrink-0 overflow-hidden relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                         </div>
                         <h5 class="text-base font-semibold serif leading-snug group-hover:text-rose-600 transition-colors">সামাজিক কাজে সম্পৃক্ততা: কেন এটি তরুণদের জন্য জরুরি</h5>
                     </div>
                     <div class="group cursor-pointer flex gap-4 pb-3 border-b border-gray-100 last:border-0 last:pb-0">
-                        <div class="w-32 h-18 shrink-0 overflow-hidden relative shadow-sm border border-gray-100">
-                            <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="img-placeholder w-32 h-18 shrink-0 overflow-hidden relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                         </div>
                         <h5 class="text-base font-semibold serif leading-snug group-hover:text-rose-600 transition-colors">তরুণ প্রজন্মের দক্ষতা বৃদ্ধিতে নতুন উদ্যোগ</h5>
                     </div>
                     <div class="group cursor-pointer flex gap-4 pb-3 border-b border-gray-100 last:border-0 last:pb-0">
-                        <div class="w-32 h-18 shrink-0 overflow-hidden relative shadow-sm border border-gray-100">
-                            <img src="https://images.unsplash.com/photo-1523240715639-99a808e9956b?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="img-placeholder w-32 h-18 shrink-0 overflow-hidden relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1523240715639-99a808e9956b?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                         </div>
                         <h5 class="text-base font-semibold serif leading-snug group-hover:text-rose-600 transition-colors">ডিজিটাল যুগে তরুণদের মানসিক স্বাস্থ্য সচেতনতা</h5>
                     </div>
                     <div class="group cursor-pointer flex gap-4 pb-3 border-b border-gray-100 last:border-0 last:pb-0">
-                        <div class="w-32 h-18 shrink-0 overflow-hidden relative shadow-sm border border-gray-100">
-                            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="img-placeholder w-32 h-18 shrink-0 overflow-hidden relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                         </div>
                         <h5 class="text-base font-semibold serif leading-snug group-hover:text-rose-600 transition-colors">ভবিষ্যৎ ক্যারিয়ার গড়ার প্রথম ধাপ: ইন্টার্নশিপের গুরুত্ব</h5>
                     </div>
@@ -1223,26 +1138,22 @@
                 <!-- Col 3: Horizontal List -->
                 <div class="space-y-4">
                     <div class="group cursor-pointer flex gap-4 pb-3 border-b border-gray-100 last:border-0 last:pb-0">
-                        <div class="w-32 h-18 shrink-0 overflow-hidden relative shadow-sm border border-gray-100">
-                            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="img-placeholder w-32 h-18 shrink-0 overflow-hidden relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                         </div>
                         <h5 class="text-base font-semibold serif leading-snug group-hover:text-rose-600 transition-colors">নতুন প্রজন্মের ভাবনায় আগামীর সমৃদ্ধ বাংলাদেশ</h5>
                     </div>
                     <div class="group cursor-pointer flex gap-4 pb-3 border-b border-gray-100 last:border-0 last:pb-0">
-                        <div class="w-32 h-18 shrink-0 overflow-hidden relative shadow-sm border border-gray-100">
-                            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="img-placeholder w-32 h-18 shrink-0 overflow-hidden relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                         </div>
                         <h5 class="text-base font-semibold serif leading-snug group-hover:text-rose-600 transition-colors">উদ্যোক্তা হওয়ার স্বপ্নে বিভোর একদল সাহসী তরুণ</h5>
                     </div>
                     <div class="group cursor-pointer flex gap-4 pb-3 border-b border-gray-100 last:border-0 last:pb-0">
-                        <div class="w-32 h-18 shrink-0 overflow-hidden relative shadow-sm border border-gray-100">
-                            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="img-placeholder w-32 h-18 shrink-0 overflow-hidden relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                         </div>
                         <h5 class="text-base font-semibold serif leading-snug group-hover:text-rose-600 transition-colors">প্রযুক্তির উৎকর্ষতায় নতুন প্রজন্মের সৃজনশীলতা</h5>
                     </div>
                     <div class="group cursor-pointer flex gap-4 pb-3 border-b border-gray-100 last:border-0 last:pb-0">
-                        <div class="w-32 h-18 shrink-0 overflow-hidden relative shadow-sm border border-gray-100">
-                            <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="img-placeholder w-32 h-18 shrink-0 overflow-hidden relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                         </div>
                         <h5 class="text-base font-semibold serif leading-snug group-hover:text-rose-600 transition-colors">কমিউনিটি সেবায় তরুণদের অংশগ্রহণ বাড়ছে</h5>
                     </div>
@@ -1254,34 +1165,29 @@
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-3">
                 <!-- Col 1: Big Vertical -->
                 <div class="group cursor-pointer lg:border-r border-gray-100 lg:pr-3">
-                    <div class="overflow-hidden h-86 mb-2 relative shadow-sm border border-gray-100">
-                        <img src="https://images.unsplash.com/photo-1541339907198-e08759dfc3f0?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="img-placeholder overflow-hidden h-86 mb-2 relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1541339907198-e08759dfc3f0?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                     </div>
                     <h4 class="text-2xl font-bold serif leading-snug group-hover:text-rose-600 transition-colors">বিশ্ববিদ্যালয় র্যাঙ্কিংয়ে দেশের শীর্ষ প্রতিষ্ঠানের অভাবনীয় সাফল্য</h4>
                 </div>
                 <!-- Col 2: Horizontal List -->
                 <div class="space-y-3 lg:border-r border-gray-100 lg:pr-3">
                     <div class="group cursor-pointer flex gap-4 pb-3 border-b border-gray-100 last:border-0 last:pb-0">
-                        <div class="w-32 h-18 shrink-0 overflow-hidden relative shadow-sm border border-gray-100">
-                            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="img-placeholder w-32 h-18 shrink-0 overflow-hidden relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                         </div>
                         <h5 class="text-base font-semibold serif leading-snug group-hover:text-rose-600 transition-colors">ক্যাম্পাসে বিতর্ক প্রতিযোগিতার আসর: সেরাদের লড়াই</h5>
                     </div>
                     <div class="group cursor-pointer flex gap-4 pb-3 border-b border-gray-100 last:border-0 last:pb-0">
-                        <div class="w-32 h-18 shrink-0 overflow-hidden relative shadow-sm border border-gray-100">
-                            <img src="https://images.unsplash.com/photo-1523240715639-99a808e9956b?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="img-placeholder w-32 h-18 shrink-0 overflow-hidden relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1523240715639-99a808e9956b?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                         </div>
                         <h5 class="text-base font-semibold serif leading-snug group-hover:text-rose-600 transition-colors">বিশ্ববিদ্যালয় ভর্তি পরীক্ষার সর্বশেষ আপডেট</h5>
                     </div>
                     <div class="group cursor-pointer flex gap-4 pb-3 border-b border-gray-100 last:border-0 last:pb-0">
-                        <div class="w-32 h-18 shrink-0 overflow-hidden relative shadow-sm border border-gray-100">
-                            <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="img-placeholder w-32 h-18 shrink-0 overflow-hidden relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                         </div>
                         <h5 class="text-base font-semibold serif leading-snug group-hover:text-rose-600 transition-colors">ক্যাম্পাস প্রাঙ্গণে সাংস্কৃতিক উৎসবের আমেজ</h5>
                     </div>
                     <div class="group cursor-pointer flex gap-4 pb-3 border-b border-gray-100 last:border-0 last:pb-0">
-                        <div class="w-32 h-18 shrink-0 overflow-hidden relative shadow-sm border border-gray-100">
-                            <img src="https://images.unsplash.com/photo-1525921429624-479b6a29d84c?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="img-placeholder w-32 h-18 shrink-0 overflow-hidden relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1525921429624-479b6a29d84c?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                         </div>
                         <h5 class="text-base font-semibold serif leading-snug group-hover:text-rose-600 transition-colors">গবেষণায় আগ্রহী হচ্ছেন বিশ্ববিদ্যালয় শিক্ষার্থীরা</h5>
                     </div>
@@ -1290,26 +1196,22 @@
                 <!-- Col 3: Horizontal List -->
                 <div class="space-y-3">
                     <div class="group cursor-pointer flex gap-4 pb-3 border-b border-gray-100 last:border-0 last:pb-0">
-                        <div class="w-32 h-18 shrink-0 overflow-hidden relative shadow-sm border border-gray-100">
-                            <img src="https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="img-placeholder w-32 h-18 shrink-0 overflow-hidden relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                         </div>
                         <h5 class="text-base font-semibold serif leading-snug group-hover:text-rose-600 transition-colors">হল রাজনীতি থেকে দূরে থাকতে শিক্ষার্থীদের নতুন আহ্বান</h5>
                     </div>
                     <div class="group cursor-pointer flex gap-4 pb-3 border-b border-gray-100 last:border-0 last:pb-0">
-                        <div class="w-32 h-18 shrink-0 overflow-hidden relative shadow-sm border border-gray-100">
-                            <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="img-placeholder w-32 h-18 shrink-0 overflow-hidden relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                         </div>
                         <h5 class="text-base font-semibold serif leading-snug group-hover:text-rose-600 transition-colors">ক্যাম্পাস ক্যারিয়ার ফেয়ারে চাকরির হাতছানি</h5>
                     </div>
                     <div class="group cursor-pointer flex gap-4 pb-3 border-b border-gray-100 last:border-0 last:pb-0">
-                        <div class="w-32 h-18 shrink-0 overflow-hidden relative shadow-sm border border-gray-100">
-                            <img src="https://images.unsplash.com/photo-1501503060800-50284814362a?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="img-placeholder w-32 h-18 shrink-0 overflow-hidden relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1501503060800-50284814362a?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                         </div>
                         <h5 class="text-base font-semibold serif leading-snug group-hover:text-rose-600 transition-colors">শিক্ষার্থীদের যাতায়াত দুর্ভোগ কমাতে নতুন বাস সার্ভিস</h5>
                     </div>
                     <div class="group cursor-pointer flex gap-4 pb-3 border-b border-gray-100 last:border-0 last:pb-0">
-                        <div class="w-32 h-18 shrink-0 overflow-hidden relative shadow-sm border border-gray-100">
-                            <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="img-placeholder w-32 h-18 shrink-0 overflow-hidden relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                         </div>
                         <h5 class="text-base font-semibold serif leading-snug group-hover:text-rose-600 transition-colors">লাইব্রেরিতে পড়ার পরিবেশ উন্নত করার উদ্যোগ</h5>
                     </div>
@@ -1321,34 +1223,29 @@
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-3">
                 <!-- Col 1: Big Vertical -->
                 <div class="group cursor-pointer lg:border-r border-gray-100 lg:pr-3">
-                    <div class="overflow-hidden h-86 mb-2 relative shadow-sm border border-gray-100">
-                        <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="img-placeholder overflow-hidden h-86 mb-2 relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                     </div>
                     <h4 class="text-2xl font-bold serif leading-snug group-hover:text-rose-600 transition-colors">চাকরিতে আবেদনের শেষ মুহূর্তের প্রস্তুতি যেভাবে নেবেন</h4>
                 </div>
                 <!-- Col 2: Horizontal List -->
                 <div class="space-y-3 lg:border-r border-gray-100 lg:pr-3">
                     <div class="group cursor-pointer flex gap-4 pb-3 border-b border-gray-100 last:border-0 last:pb-0">
-                        <div class="w-32 h-18 shrink-0 overflow-hidden relative shadow-sm border border-gray-100">
-                            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="img-placeholder w-32 h-18 shrink-0 overflow-hidden relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                         </div>
                         <h5 class="text-base font-semibold serif leading-snug group-hover:text-rose-600 transition-colors">বিসিএস ভাইভায় ভালো করার কিছু পরীক্ষিত কৌশল</h5>
                     </div>
                     <div class="group cursor-pointer flex gap-4 pb-3 border-b border-gray-100 last:border-0 last:pb-0">
-                        <div class="w-32 h-18 shrink-0 overflow-hidden relative shadow-sm border border-gray-100">
-                            <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="img-placeholder w-32 h-18 shrink-0 overflow-hidden relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                         </div>
                         <h5 class="text-base font-semibold serif leading-snug group-hover:text-rose-600 transition-colors">ব্যাংক জবে আবেদনের জন্য প্রয়োজনীয় প্রস্তুতি</h5>
                     </div>
                     <div class="group cursor-pointer flex gap-4 pb-3 border-b border-gray-100 last:border-0 last:pb-0">
-                        <div class="w-32 h-18 shrink-0 overflow-hidden relative shadow-sm border border-gray-100">
-                            <img src="https://images.unsplash.com/photo-1521791136364-798a730bb3be?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="img-placeholder w-32 h-18 shrink-0 overflow-hidden relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1521791136364-798a730bb3be?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                         </div>
                         <h5 class="text-base font-semibold serif leading-snug group-hover:text-rose-600 transition-colors">মাল্টিন্যাশনাল কোম্পানিতে ক্যারিয়ার গড়ার সুযোগ</h5>
                     </div>
                     <div class="group cursor-pointer flex gap-4 pb-3 border-b border-gray-100 last:border-0 last:pb-0">
-                        <div class="w-32 h-18 shrink-0 overflow-hidden relative shadow-sm border border-gray-100">
-                            <img src="https://images.unsplash.com/photo-1507679799987-c7377ec486b6?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="img-placeholder w-32 h-18 shrink-0 overflow-hidden relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1507679799987-c7377ec486b6?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                         </div>
                         <h5 class="text-base font-semibold serif leading-snug group-hover:text-rose-600 transition-colors">চাকরির বাজারে প্রতিযোগিতায় টিকে থাকার উপায়</h5>
                     </div>
@@ -1357,26 +1254,22 @@
                 <!-- Col 3: Horizontal List -->
                 <div class="space-y-3">
                     <div class="group cursor-pointer flex gap-4 pb-3 border-b border-gray-100 last:border-0 last:pb-0">
-                        <div class="w-32 h-18 shrink-0 overflow-hidden relative shadow-sm border border-gray-100">
-                            <img src="https://images.unsplash.com/photo-1507679799987-c7377ec486b6?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="img-placeholder w-32 h-18 shrink-0 overflow-hidden relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1507679799987-c7377ec486b6?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                         </div>
                         <h5 class="text-base font-semibold serif leading-snug group-hover:text-rose-600 transition-colors">ফ্রিল্যান্সিং ক্যারিয়ার: শুরু করবেন যেভাবে</h5>
                     </div>
                     <div class="group cursor-pointer flex gap-4 pb-3 border-b border-gray-100 last:border-0 last:pb-0">
-                        <div class="w-32 h-18 shrink-0 overflow-hidden relative shadow-sm border border-gray-100">
-                            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="img-placeholder w-32 h-18 shrink-0 overflow-hidden relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                         </div>
                         <h5 class="text-base font-semibold serif leading-snug group-hover:text-rose-600 transition-colors">আইটি সেক্টরে ক্রমবর্ধমান চাকরির চাহিদা</h5>
                     </div>
                     <div class="group cursor-pointer flex gap-4 pb-3 border-b border-gray-100 last:border-0 last:pb-0">
-                        <div class="w-32 h-18 shrink-0 overflow-hidden relative shadow-sm border border-gray-100">
-                            <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="img-placeholder w-32 h-18 shrink-0 overflow-hidden relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                         </div>
                         <h5 class="text-base font-semibold serif leading-snug group-hover:text-rose-600 transition-colors">বিদেশে উচ্চশিক্ষার পর চাকরির সম্ভাবনা</h5>
                     </div>
                     <div class="group cursor-pointer flex gap-4 pb-3 border-b border-gray-100 last:border-0 last:pb-0">
-                        <div class="w-32 h-18 shrink-0 overflow-hidden relative shadow-sm border border-gray-100">
-                            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="img-placeholder w-32 h-18 shrink-0 overflow-hidden relative shadow-sm border border-gray-100"><img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                         </div>
                         <h5 class="text-base font-semibold serif leading-snug group-hover:text-rose-600 transition-colors">সরকারি চাকরিতে নতুন নিয়োগ বিজ্ঞপ্তি</h5>
                     </div>
@@ -1396,11 +1289,10 @@
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
                 <!-- Main Video: 7 Cols -->
                 <div class="lg:col-span-7 group cursor-pointer">
-                    <div class="relative overflow-hidden aspect-video bg-black  shadow-sm">
-                        <img src="https://images.unsplash.com/photo-1502481851512-e9e2529bbbf9?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
+                    <div class="img-placeholder relative overflow-hidden aspect-video bg-black  shadow-sm"><img src="https://images.unsplash.com/photo-1502481851512-e9e2529bbbf9?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700" onload="this.parentElement.classList.remove('img-placeholder')" >
                         <!-- Play Button Overlay -->
                         <div class="absolute inset-0 flex items-center justify-center">
-                            <div class="w-16 h-16 bg-rose-600 rounded-full flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform">
+                            <div class="w-16 h-16 bg-rose-600  flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 fill-current" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
                             </div>
                         </div>
@@ -1414,10 +1306,9 @@
                     <div class="grid grid-cols-2 gap-4">
                         <!-- Video 1 -->
                         <div class="group cursor-pointer">
-                            <div class="relative overflow-hidden aspect-video bg-black  shadow-sm mb-2">
-                                <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500">
+                            <div class="img-placeholder relative overflow-hidden aspect-video bg-black  shadow-sm mb-2"><img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                                 <div class="absolute inset-0 flex items-center justify-center">
-                                    <div class="w-10 h-10 bg-black/60 backdrop-blur-sm rounded-full flex items-center justify-center text-white border border-white/20 group-hover:bg-rose-600 transition-colors">
+                                    <div class="w-10 h-10 bg-black/60 backdrop-blur-sm  flex items-center justify-center text-white border border-white/20 group-hover:bg-rose-600 transition-colors">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
                                     </div>
                                 </div>
@@ -1426,10 +1317,9 @@
                         </div>
                         <!-- Video 2 -->
                         <div class="group cursor-pointer">
-                            <div class="relative overflow-hidden aspect-video bg-black  shadow-sm mb-2">
-                                <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500">
+                            <div class="img-placeholder relative overflow-hidden aspect-video bg-black  shadow-sm mb-2"><img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                                 <div class="absolute inset-0 flex items-center justify-center">
-                                    <div class="w-10 h-10 bg-black/60 backdrop-blur-sm rounded-full flex items-center justify-center text-white border border-white/20 group-hover:bg-rose-600 transition-colors">
+                                    <div class="w-10 h-10 bg-black/60 backdrop-blur-sm  flex items-center justify-center text-white border border-white/20 group-hover:bg-rose-600 transition-colors">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
                                     </div>
                                 </div>
@@ -1438,10 +1328,9 @@
                         </div>
                         <!-- Video 3 -->
                         <div class="group cursor-pointer">
-                            <div class="relative overflow-hidden aspect-video bg-black  shadow-sm mb-2">
-                                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500">
+                            <div class="img-placeholder relative overflow-hidden aspect-video bg-black  shadow-sm mb-2"><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                                 <div class="absolute inset-0 flex items-center justify-center">
-                                    <div class="w-10 h-10 bg-black/60 backdrop-blur-sm rounded-full flex items-center justify-center text-white border border-white/20 group-hover:bg-rose-600 transition-colors">
+                                    <div class="w-10 h-10 bg-black/60 backdrop-blur-sm  flex items-center justify-center text-white border border-white/20 group-hover:bg-rose-600 transition-colors">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
                                     </div>
                                 </div>
@@ -1450,10 +1339,9 @@
                         </div>
                         <!-- Video 4 -->
                         <div class="group cursor-pointer">
-                            <div class="relative overflow-hidden aspect-video bg-black shadow-sm mb-2">
-                                <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500">
+                            <div class="img-placeholder relative overflow-hidden aspect-video bg-black shadow-sm mb-2"><img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                                 <div class="absolute inset-0 flex items-center justify-center">
-                                    <div class="w-10 h-10 bg-black/60 backdrop-blur-sm rounded-full flex items-center justify-center text-white border border-white/20 group-hover:bg-rose-600 transition-colors">
+                                    <div class="w-10 h-10 bg-black/60 backdrop-blur-sm  flex items-center justify-center text-white border border-white/20 group-hover:bg-rose-600 transition-colors">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
                                     </div>
                                 </div>
@@ -1471,15 +1359,14 @@
         <div class="">
             <div class="flex items-center gap-3 mb-6">
                 <h2 class="text-2xl font-bold serif text-gray-900">ছবি</h2>
-                
+                <div class="h-1 flex-grow bg-rose-600"></div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <!-- First Column: 1 top, 2 bottom -->
                 <div class="flex flex-col gap-4">
                     <!-- Top Image -->
-                    <div class="group cursor-pointer relative overflow-hidden rounded-sm shadow-md h-[260px]">
-                        <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=2070&auto=format&fit=crop" alt="Photography" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="img-placeholder group cursor-pointer relative overflow-hidden  shadow-md h-[330px]"><img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=2070&auto=format&fit=crop" alt="Photography" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onload="this.parentElement.classList.remove('img-placeholder')" >
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                             <p class="text-white font-serif text-lg leading-tight">শহরের ব্যস্ত জীবনের এক মুহূর্তের প্রতিচ্ছবি</p>
                         </div>
@@ -1487,20 +1374,17 @@
                     
                     <!-- Two Bottom Images -->
                     <div class="grid grid-cols-2 gap-4">
-                        <div class="group cursor-pointer relative overflow-hidden rounded-sm shadow-md h-[170px]">
-                            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=2070&auto=format&fit=crop" alt="Nature" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="img-placeholder group cursor-pointer relative overflow-hidden  shadow-md h-[160px]"><img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=2070&auto=format&fit=crop" alt="Nature" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                             <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>
                         </div>
-                        <div class="group cursor-pointer relative overflow-hidden rounded-sm shadow-md h-[170px]">
-                            <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2070&auto=format&fit=crop" alt="Tech" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="img-placeholder group cursor-pointer relative overflow-hidden  shadow-md h-[160px]"><img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2070&auto=format&fit=crop" alt="Tech" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                             <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Second Column: One big image -->
-                <div class="group cursor-pointer relative overflow-hidden rounded-sm shadow-md h-[246px]">
-                    <img src="https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?q=80&w=2070&auto=format&fit=crop" alt="Featured Photo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                <div class="img-placeholder group cursor-pointer relative overflow-hidden  shadow-md h-[505px]"><img src="https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?q=80&w=2070&auto=format&fit=crop" alt="Featured Photo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onload="this.parentElement.classList.remove('img-placeholder')" >
                     <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent flex flex-col justify-end p-6">
                         <span class="bg-rose-600 text-white text-xs font-bold px-2 py-1 w-max mb-3">ফিচারড ফটো</span>
                         <h3 class="text-white text-3xl font-bold serif leading-tight">বাংলাদেশের প্রাকৃতিক সৌন্দর্যে মোড়ানো এক অনন্য ক্যানভাস</h3>
@@ -1511,6 +1395,7 @@
         </div>
     </section>
 
+    </div>
     <script>
         function switchTopicTab(topic) {
             // Hide all panels
