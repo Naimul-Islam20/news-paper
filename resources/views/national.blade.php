@@ -1,16 +1,16 @@
 <x-layout>
     <x-slot:title>জাতীয় - দ্য ডেইলি নিউজ</x-slot>
 
-        <div class="py-10 min-h-screen">
+        <div class="py-4 md:py-10 min-h-screen">
             <div class="container">
                 @php
                     $categoryName = "জাতীয়";
                 @endphp
                 <!-- Category Header -->
-                <div class="mb-10 text-left">
+                <div class="mb-4 md:mb-10 text-left">
                     <h1 class="text-4xl md:text-3xl font-semibold serif text-title mb-4">{{ $categoryName }}</h1>
 
-                    <div class="flex items-center gap-1 text-sm font-bold text-slate-500 mb-6">
+                    <div class="flex items-center gap-1 text-sm font-bold text-slate-500 mb-4 md:mb-6">
                         <!-- Home Icon -->
                         <a href="/" class="text-slate-500 hover:text-rose-600 transition-all">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -22,7 +22,7 @@
                         <span class="text-black font-bold">{{ $categoryName }}</span>
                     </div>
 
-                    <div class="w-full border-b border-slate-300 relative mb-8">
+                    <div class="w-full border-b border-slate-300 relative mb-4 md:mb-8">
                         <div class="absolute -bottom-[1px] left-0 w-40 h-[2px] bg-rose-600"></div>
                     </div>
                 </div>
@@ -42,7 +42,7 @@
 
                 <section class="national-grid">
                     <!-- প্রথম কলাম: সরু -->
-                    <div class="p-4">
+                    <div class="p-0 md:p-4">
                         {{-- কন্টেন্ট আপাতত খালি --}}
                     </div>
                     <!-- মাঝের কলাম: সংবাদ তালিকা -->
@@ -50,25 +50,24 @@
                         \Carbon\Carbon::setLocale('bn'); 
                     @endphp
 
-                    <div class="bg-white p-4 flex flex-col gap-5">
+                    <div class="bg-white p-0 md:p-4 flex flex-col gap-3 md:gap-5">
  
                         {{-- নিউজ কার্ড ১ --}}
-                        <article class="flex gap-4">
-                            {{-- বাম: ছবি --}}
-                            <a href="/news-details" class="flex-shrink-0">
-                                <div class="img-placeholder"><img src="https://loremflickr.com/600/400/parliament,building?lock=1" 
+                        <article class="flex flex-col md:flex-row gap-2 md:gap-4 last:pb-0">
+                            {{-- ছবি --}}
+                            <a href="/news-details" class="w-full md:w-auto flex-shrink-0">
+                                <div class="img-placeholder w-full md:w-[305px] h-[200px] md:h-[170px] overflow-hidden"><img src="https://loremflickr.com/600/400/parliament,building?lock=1" 
                                      alt="জাতীয় সংসদ"
-                                     style="width: 305px; height: 170px;"
-                                     class="object-cover" onload="this.parentElement.classList.remove('img-placeholder')" ></div>
+                                     class="w-full h-full object-cover" onload="this.parentElement.classList.remove('img-placeholder')" ></div>
                             </a>
-                            {{-- বাম: টাইটেল + বিবরণ --}}
+                            {{-- টাইটেল + বিবরণ --}}
                             <div class="flex flex-col justify-start gap-2 pt-1 flex-1">
                                 <a href="/news-details">
-                                    <h3 class="text-base font-bold serif text-title leading-snug hover:text-rose-600 transition-colors">
+                                    <h3 class="text-xl md:text-base font-bold serif text-title leading-snug hover:text-rose-600 transition-colors">
                                         জাতীয় সংসদে গুরুত্বপূর্ণ বিল পাস, নতুন আইন কার্যকর হচ্ছে শীঘ্রই
                                     </h3>
                                 </a>
-                                <p class="text-sm font-semibold text-desc leading-relaxed line-clamp-2">
+                                <p class="hidden md:block text-sm font-semibold text-desc leading-relaxed line-clamp-2">
                                     আজ জাতীয় সংসদে একটি ঐতিহাসিক বিল পাস হয়েছে যা দেশের নাগরিকদের জীবনে বড় পরিবর্তন আনবে বলে আশা করা হচ্ছে। এই আইনের মাধ্যমে ডিজিটাল সেবার পরিধি আরও বিস্তৃত হবে।
                                 </p>
                                 <div class="flex items-center gap-1.5 mt-auto text-gray-500">
@@ -81,20 +80,19 @@
                         </article>
 
                         {{-- নিউজ কার্ড ২ --}}
-                        <article class="flex gap-4">
-                            <a href="#" class="flex-shrink-0">
-                                <div class="img-placeholder"><img src="https://loremflickr.com/600/400/economy,money?lock=2" 
+                        <article class="flex flex-col md:flex-row gap-2 md:gap-4 last:pb-0">
+                             <a href="#" class="w-full md:w-auto flex-shrink-0">
+                                <div class="img-placeholder w-full md:w-[305px] h-[200px] md:h-[170px] overflow-hidden"><img src="https://loremflickr.com/600/400/economy,money?lock=2" 
                                      alt="অর্থনীতি"
-                                     style="width: 305px; height: 170px;"
-                                     class="object-cover" onload="this.parentElement.classList.remove('img-placeholder')" ></div>
+                                     class="w-full h-full object-cover" onload="this.parentElement.classList.remove('img-placeholder')" ></div>
                             </a>
                             <div class="flex flex-col justify-start gap-2 pt-1 flex-1">
                                 <a href="#">
-                                    <h3 class="text-base font-bold serif text-title leading-snug hover:text-rose-600 transition-colors">
+                                    <h3 class="text-xl md:text-base font-bold serif text-title leading-snug hover:text-rose-600 transition-colors">
                                         দেশের অর্থনীতিতে নতুন গতি, রপ্তানি আয় বেড়েছে ১৫ শতাংশ
                                     </h3>
                                 </a>
-                                <p class="text-sm font-semibold text-desc leading-relaxed line-clamp-2">
+                                <p class="hidden md:block text-sm font-semibold text-desc leading-relaxed line-clamp-2">
                                     চলতি অর্থ বছরে দেশের রপ্তানি আয় উল্লেখযোগ্যভাবে বৃদ্ধি পেয়েছে। গার্মেন্টস সেক্টর এবং কৃষি পণ্যের রপ্তানি বৃদ্ধির কারণে এই সাফল্য এসেছে বলে মনে করছেন বিশেষজ্ঞরা।
                                 </p>
                                 <div class="flex items-center gap-1.5 mt-auto text-gray-500">
@@ -107,20 +105,19 @@
                         </article>
 
                         {{-- নিউজ কার্ড ৩ --}}
-                        <article class="flex gap-4">
-                            <a href="#" class="flex-shrink-0">
-                                <div class="img-placeholder"><img src="https://loremflickr.com/600/400/city,traffic?lock=3" 
+                        <article class="flex flex-col md:flex-row gap-2 md:gap-4 last:pb-0">
+                            <a href="#" class="w-full md:w-auto flex-shrink-0">
+                                <div class="img-placeholder w-full md:w-[305px] h-[200px] md:h-[170px] overflow-hidden"><img src="https://loremflickr.com/600/400/city,traffic?lock=3" 
                                      alt="যানজট"
-                                     style="width: 305px; height: 170px;"
-                                     class="object-cover" onload="this.parentElement.classList.remove('img-placeholder')" ></div>
+                                     class="w-full h-full object-cover" onload="this.parentElement.classList.remove('img-placeholder')" ></div>
                             </a>
                             <div class="flex flex-col justify-start gap-2 pt-1 flex-1">
                                 <a href="#">
-                                    <h3 class="text-base font-bold serif text-title leading-snug hover:text-rose-600 transition-colors">
+                                    <h3 class="text-xl md:text-base font-bold serif text-title leading-snug hover:text-rose-600 transition-colors">
                                         রাজধানীতে যানজট নিরসনে নতুন পরিকল্পনা গ্রহণ করেছে সরকার
                                     </h3>
                                 </a>
-                                <p class="text-sm font-semibold text-desc leading-relaxed line-clamp-2">
+                                <p class="hidden md:block text-sm font-semibold text-desc leading-relaxed line-clamp-2">
                                     ঢাকা মহানগরীর যানজট সমস্যা সমাধানে সরকার একটি বিস্তারিত মহাপরিকল্পনা গ্রহণ করেছে। নতুন ফ্লাইওভার এবং মেট্রোরেলের সংযোগ আরও বাড়ানোর প্রস্তাব দেওয়া হয়েছে।
                                 </p>
                                 <div class="flex items-center gap-1.5 mt-auto text-gray-500">
@@ -133,20 +130,19 @@
                         </article>
 
                         {{-- নিউজ কার্ড ৪ --}}
-                        <article class="flex gap-4">
-                            <a href="#" class="flex-shrink-0">
-                                <div class="img-placeholder"><img src="https://loremflickr.com/600/400/student,college?lock=4" 
+                        <article class="flex flex-col md:flex-row gap-2 md:gap-4 last:pb-0">
+                            <a href="#" class="w-full md:w-auto flex-shrink-0">
+                                <div class="img-placeholder w-full md:w-[305px] h-[200px] md:h-[170px] overflow-hidden"><img src="https://loremflickr.com/600/400/student,college?lock=4" 
                                      alt="শিক্ষা"
-                                     style="width: 305px; height: 170px;"
-                                     class="object-cover" onload="this.parentElement.classList.remove('img-placeholder')" ></div>
+                                     class="w-full h-full object-cover" onload="this.parentElement.classList.remove('img-placeholder')" ></div>
                             </a>
                             <div class="flex flex-col justify-start gap-2 pt-1 flex-1">
                                 <a href="#">
-                                    <h3 class="text-base font-bold serif text-title leading-snug hover:text-rose-600 transition-colors">
+                                    <h3 class="text-xl md:text-base font-bold serif text-title leading-snug hover:text-rose-600 transition-colors">
                                         শিক্ষা খাতে বরাদ্দ বৃদ্ধি, নতুন বিশ্ববিদ্যালয় স্থাপনের ঘোষণা
                                     </h3>
                                 </a>
-                                <p class="text-sm font-semibold text-desc leading-relaxed line-clamp-2">
+                                <p class="hidden md:block text-sm font-semibold text-desc leading-relaxed line-clamp-2">
                                     সরকার আগামী বাজেটে শিক্ষা খাতে বরাদ্দ বাড়ানোর পরিকল্পনা করেছে। গবেষণার কাজে সহায়তার জন্য প্রতিটি জেলায় আধুনিক ল্যাবরেটরি তৈরি করা হবে।
                                 </p>
                                 <div class="flex items-center gap-1.5 mt-auto text-gray-500">

@@ -1,5 +1,5 @@
 <footer class="bg-white border-t border-black/10 text-black pt-16 pb-8">
-    <div class="container overflow-visible">
+    <div class="container overflow-visible px-4 md:px-0">
         <!-- Logo and App Links Row -->
         <div class="flex flex-col md:flex-row justify-between items-center gap-8 mb-4 pb-4 border-b border-gray-300">
             <!-- Logo (Left) -->
@@ -29,9 +29,9 @@
         </div>
 
         <!-- 12-Column Grid for precise control -->
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 pt-4">
+        <div class="grid grid-cols-2 md:grid-cols-12 gap-8 pt-4">
             <!-- Column 1: Info and Copyright (Span 3) -->
-            <div class="md:col-span-3 space-y-6 md:border-r border-slate-200 md:pr-4">
+            <div class="col-span-2 md:col-span-3 space-y-6 md:border-r border-slate-200 md:pr-4">
                 <div class="text-base font-md space-y-1">
                     <p>সম্পাদক: তাসমিমা হোসেন</p>
                     <p>প্রকাশক: তারিন হোসেন</p>
@@ -45,7 +45,7 @@
             </div>
 
             <!-- Column 2: Links (Span 4) -->
-            <div class="md:col-span-4 md:border-r border-slate-200 md:pr-4">
+            <div class="col-span-2 md:col-span-4 md:border-r border-slate-200 md:pr-4">
                 <div class="grid grid-cols-2 lg:grid-cols-3 gap-y-4 gap-x-2 text-base font-semibold">
                     <a href="#" class="hover:text-rose-600 transition-colors">অনুসন্ধান</a>
                     <a href="#" class="hover:text-rose-600 transition-colors">আর্কাইভ</a>
