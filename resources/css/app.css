@@ -1,10 +1,9 @@
 @import url('https://fonts.maateen.me/solaiman-lipi/font.css');
 @import 'tailwindcss';
 
-@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
-@source '../../storage/framework/views/*.php';
-@source '../**/*.blade.php';
-@source '../**/*.js';
+@source "../**/*.blade.php";
+@source "../**/*.js";
+@source "../../app/**/*.php";
 
 @theme {
     --font-sans: 'SolaimanLipi', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
@@ -19,28 +18,38 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 0.5rem; /* বাম পাশের গ্যাপ */
-    padding-right: 0.5rem; /* ডান পাশের গ্যাপ */
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
 
-    @media (width >= 640px) {
+@media (width >= 640px) {
+    .container {
         max-width: 640px;
         padding-left: 1.5rem;
         padding-right: 1.5rem;
     }
+}
 
-    @media (width >= 768px) {
+@media (width >= 768px) {
+    .container {
         max-width: 768px;
     }
+}
 
-    @media (width >= 1024px) {
+@media (width >= 1024px) {
+    .container {
         max-width: 1024px;
     }
+}
 
-    @media (width >= 1280px) {
+@media (width >= 1280px) {
+    .container {
         max-width: 1280px;
     }
+}
 
-    @media (width >= 1380px) {
+@media (width >= 1380px) {
+    .container {
         max-width: var(--container-max);
         padding-left: 0.5rem;
         padding-right: 0.5rem;
