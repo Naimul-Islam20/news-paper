@@ -57,10 +57,10 @@
                         \Carbon\Carbon::setLocale('bn'); 
                     @endphp
 
-                    <div class="bg-white flex flex-col gap-6 md:gap-10 md:border-r md:border-slate-200 pr-0 md:pr-3">
+                    <div class="bg-white flex flex-col gap-0 md:border-r md:border-slate-200 pr-0 md:pr-3">
  
                         {{-- প্রধান নিউজ কার্ড (Featured Article) --}}
-                        <article class="flex flex-col-reverse md:flex-row gap-3 pb-6 md:pb-10 last:border-0 text-left border-b border-gray-100 md:border-0">
+                        <article class="flex flex-col-reverse md:flex-row gap-3 pb-3 last:border-0 text-left border-b border-gray-100">
                             {{-- বাম: টাইটেল + বিবরণ --}}
                             <div class="flex flex-col justify-start gap-3 flex-1">
                                 <a href="#">
@@ -90,9 +90,9 @@
                         </article>
 
                         {{-- ৩-কলামের নিচের নিউজ গ্রিড --}}
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-0 mt-4 md:mt-4 pt-4 border-t border-slate-200">
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-0 pt-3">
                             {{-- গ্রিড আইটেম ১ --}}
-                            <article class="flex flex-row-reverse md:flex-col gap-3 pb-4 border-b border-gray-100 md:border-b-0 md:pb-0 md:pr-3 md:border-r md:border-slate-200">
+                            <article class="flex flex-row-reverse md:flex-col gap-2 md:gap-3 pb-4 border-b border-gray-100 md:border-b-0 md:pb-0 md:pr-3 md:border-r md:border-slate-200">
                                 <a href="#" class="group overflow-hidden shrink-0">
                                     <div class="img-placeholder w-36 h-24 md:w-full md:h-[180px]"><img src="https://loremflickr.com/400/250/politics?lock=21" 
                                          alt="নিউজ ১"
@@ -115,7 +115,7 @@
                             </article>
 
                             {{-- গ্রিড আইটেম ২ --}}
-                            <article class="flex flex-row-reverse md:flex-col gap-3 pb-4 border-b border-gray-100 md:border-b-0 md:pb-0 md:px-3 md:border-r md:border-slate-200">
+                            <article class="flex flex-row-reverse md:flex-col gap-2 md:gap-3 pb-4 border-b border-gray-100 md:border-b-0 md:pb-0 md:px-3 md:border-r md:border-slate-200">
                                 <a href="#" class="group overflow-hidden shrink-0">
                                     <div class="img-placeholder w-36 h-24 md:w-full md:h-[180px]"><img src="https://loremflickr.com/400/250/sports?lock=22" 
                                          alt="নিউজ ২"
@@ -138,7 +138,7 @@
                             </article>
 
                             {{-- গ্রিড আইটেম ৩ --}}
-                            <article class="flex flex-row-reverse md:flex-col gap-3 md:pl-3">
+                            <article class="flex flex-row-reverse md:flex-col gap-2 md:gap-3 md:pl-3">
                                 <a href="#" class="group overflow-hidden shrink-0">
                                     <div class="img-placeholder w-36 h-24 md:w-full md:h-[180px]"><img src="https://loremflickr.com/400/250/world?lock=23" 
                                          alt="নিউজ ৩"
@@ -163,14 +163,14 @@
                     </div>
 
                     <!-- ডান কলাম: সর্বশেষ / পঠিত ট্যাব -->
-                    <div class="flex flex-col pl-0 md:pl-3 mt-10 md:mt-0">
+                    <div class="flex flex-col pl-0 md:pl-3 mt-4 md:mt-0">
 
                         <!-- Tab Bar -->
-                        <div class="flex w-full border-b border-gray-200 mb-4">
-                            <button id="sp-tab-latest" onclick="switchSpTab('latest')" class="flex-1 text-3xl font-bold py-2 border-b-2 border-rose-600 text-rose-600 -mb-px transition-all duration-200 text-center">
+                        <div class="flex w-full border-b border-gray-200 mb-4 px-4 md:px-0">
+                            <button id="sp-tab-latest" onclick="switchSpTab('latest')" class="flex-1 text-lg font-bold py-2 border-b-2 border-rose-600 text-rose-600 -mb-px transition-all duration-200 text-center">
                                 সর্বশেষ
                             </button>
-                            <button id="sp-tab-popular" onclick="switchSpTab('popular')" class="flex-1 text-3xl font-bold py-2 border-b-2 border-transparent text-gray-400 -mb-px hover:text-gray-600 transition-all duration-200 text-center">
+                            <button id="sp-tab-popular" onclick="switchSpTab('popular')" class="flex-1 text-lg font-bold py-2 border-b-2 border-transparent text-gray-400 -mb-px hover:text-gray-600 transition-all duration-200 text-center">
                                 পঠিত
                             </button>
                         </div>
@@ -186,7 +186,7 @@
                                     </h4>
                                 </div>
                                 <div class="overflow-hidden shrink-0 border border-gray-100 shadow-sm " style="width:96px; height:72px; min-width:96px; min-height:72px;">
-                                    <div class="img-placeholder"><img src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" ></div>
+                                    <div class="img-placeholder w-full h-full"><img src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" ></div>
                                 </div>
                             </div>
                             <!-- Item 2 -->
@@ -198,7 +198,7 @@
                                     </h4>
                                 </div>
                                 <div class="overflow-hidden shrink-0 border border-gray-100 shadow-sm " style="width:96px; height:72px; min-width:96px; min-height:72px;">
-                                    <div class="img-placeholder"><img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" ></div>
+                                    <div class="img-placeholder w-full h-full"><img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" ></div>
                                 </div>
                             </div>
                             <!-- Item 3 -->
@@ -210,7 +210,7 @@
                                     </h4>
                                 </div>
                                 <div class="overflow-hidden shrink-0 border border-gray-100 shadow-sm " style="width:96px; height:72px; min-width:96px; min-height:72px;">
-                                    <div class="img-placeholder"><img src="https://images.unsplash.com/photo-1582139329536-e7284fece509?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" ></div>
+                                    <div class="img-placeholder w-full h-full"><img src="https://images.unsplash.com/photo-1582139329536-e7284fece509?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" ></div>
                                 </div>
                             </div>
                             <!-- Item 4 -->
@@ -222,7 +222,7 @@
                                     </h4>
                                 </div>
                                 <div class="overflow-hidden shrink-0 border border-gray-100 shadow-sm " style="width:96px; height:72px; min-width:96px; min-height:72px;">
-                                    <div class="img-placeholder"><img src="https://images.unsplash.com/photo-1554224155-1696413565d3?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" ></div>
+                                    <div class="img-placeholder w-full h-full"><img src="https://images.unsplash.com/photo-1554224155-1696413565d3?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" ></div>
                                 </div>
                             </div>
                             <!-- Item 5 -->
@@ -234,7 +234,7 @@
                                     </h4>
                                 </div>
                                 <div class="overflow-hidden shrink-0 border border-gray-100 shadow-sm " style="width:96px; height:72px; min-width:96px; min-height:72px;">
-                                    <div class="img-placeholder"><img src="https://images.unsplash.com/photo-1477601263368-1823bb1643df?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" ></div>
+                                    <div class="img-placeholder w-full h-full"><img src="https://images.unsplash.com/photo-1477601263368-1823bb1643df?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" ></div>
                                 </div>
                             </div>
                             <!-- Item 6 -->
@@ -246,7 +246,7 @@
                                     </h4>
                                 </div>
                                 <div class="overflow-hidden shrink-0 border border-gray-100 shadow-sm " style="width:96px; height:72px; min-width:96px; min-height:72px;">
-                                    <div class="img-placeholder"><img src="https://images.unsplash.com/photo-1547683905-f686c993aae5?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" ></div>
+                                    <div class="img-placeholder w-full h-full"><img src="https://images.unsplash.com/photo-1547683905-f686c993aae5?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" ></div>
                                 </div>
                             </div>
                         </div>
@@ -262,7 +262,7 @@
                                     </h4>
                                 </div>
                                 <div class="overflow-hidden shrink-0 border border-gray-100 shadow-sm " style="width:96px; height:72px; min-width:96px; min-height:72px;">
-                                    <div class="img-placeholder"><img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" ></div>
+                                    <div class="img-placeholder w-full h-full"><img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" ></div>
                                 </div>
                             </div>
                             <!-- Item 2 -->
@@ -274,7 +274,7 @@
                                     </h4>
                                 </div>
                                 <div class="overflow-hidden shrink-0 border border-gray-100 shadow-sm " style="width:96px; height:72px; min-width:96px; min-height:72px;">
-                                    <div class="img-placeholder"><img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" ></div>
+                                    <div class="img-placeholder w-full h-full"><img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" ></div>
                                 </div>
                             </div>
                             <!-- Item 3 -->
@@ -286,7 +286,7 @@
                                     </h4>
                                 </div>
                                 <div class="overflow-hidden shrink-0 border border-gray-100 shadow-sm " style="width:96px; height:72px; min-width:96px; min-height:72px;">
-                                    <div class="img-placeholder"><img src="https://images.unsplash.com/photo-1540747913346-19212a4b32a1?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" ></div>
+                                    <div class="img-placeholder w-full h-full"><img src="https://images.unsplash.com/photo-1540747913346-19212a4b32a1?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" ></div>
                                 </div>
                             </div>
                             <!-- Item 4 -->
@@ -298,7 +298,7 @@
                                     </h4>
                                 </div>
                                 <div class="overflow-hidden shrink-0 border border-gray-100 shadow-sm " style="width:96px; height:72px; min-width:96px; min-height:72px;">
-                                    <div class="img-placeholder"><img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" ></div>
+                                    <div class="img-placeholder w-full h-full"><img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" ></div>
                                 </div>
                             </div>
                             <!-- Item 5 -->
@@ -310,7 +310,7 @@
                                     </h4>
                                 </div>
                                 <div class="overflow-hidden shrink-0 border border-gray-100 shadow-sm " style="width:96px; height:72px; min-width:96px; min-height:72px;">
-                                    <div class="img-placeholder"><img src="https://images.unsplash.com/photo-1559628233-100c798642fd?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" ></div>
+                                    <div class="img-placeholder w-full h-full"><img src="https://images.unsplash.com/photo-1559628233-100c798642fd?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" ></div>
                                 </div>
                             </div>
                             <!-- Item 6 -->
@@ -322,7 +322,7 @@
                                     </h4>
                                 </div>
                                 <div class="overflow-hidden shrink-0 border border-gray-100 shadow-sm " style="width:96px; height:72px; min-width:96px; min-height:72px;">
-                                    <div class="img-placeholder"><img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" ></div>
+                                    <div class="img-placeholder w-full h-full"><img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" ></div>
                                 </div>
                             </div>
                         </div>
@@ -338,8 +338,8 @@
                             function switchSpTab(tab) {
                                 document.getElementById('sp-panel-latest').classList.toggle('hidden', tab !== 'latest');
                                 document.getElementById('sp-panel-popular').classList.toggle('hidden', tab !== 'popular');
-                                document.getElementById('sp-tab-latest').className = 'flex-1 text-3xl font-bold py-2 border-b-2 -mb-px transition-all duration-200 text-center ' + (tab === 'latest' ? 'border-rose-600 text-rose-600' : 'border-transparent text-gray-400 hover:text-gray-600');
-                                document.getElementById('sp-tab-popular').className = 'flex-1 text-3xl font-bold py-2 border-b-2 -mb-px transition-all duration-200 text-center ' + (tab === 'popular' ? 'border-rose-600 text-rose-600' : 'border-transparent text-gray-400 hover:text-gray-600');
+                                document.getElementById('sp-tab-latest').className = 'flex-1 text-lg font-bold py-2 border-b-2 -mb-px transition-all duration-200 text-center ' + (tab === 'latest' ? 'border-rose-600 text-rose-600' : 'border-transparent text-gray-400 hover:text-gray-600');
+                                document.getElementById('sp-tab-popular').className = 'flex-1 text-lg font-bold py-2 border-b-2 -mb-px transition-all duration-200 text-center ' + (tab === 'popular' ? 'border-rose-600 text-rose-600' : 'border-transparent text-gray-400 hover:text-gray-600');
                             }
                         </script>
 
@@ -347,7 +347,7 @@
                 </section>
 
                 <!-- Section: National Page Style (Exact Copy) -->
-                <section class="national-grid mt-12 pt-12 border-t border-slate-200">
+                <section class="national-grid mt-6 md:mt-12 pt-3 md:pt-12 border-t border-slate-200">
                     <!-- প্রথম কলাম: সরু -->
                     <div class="p-4">
                         {{-- কন্টেন্ট আপাতত খালি --}}
@@ -358,10 +358,10 @@
                         \Carbon\Carbon::setLocale('bn'); 
                     @endphp
 
-                    <div class="bg-white px-0 md:p-4 flex flex-col gap-3">
+                    <div class="bg-white px-0 md:p-4 flex flex-col gap-0">
  
                         {{-- নিউজ কার্ড ১ --}}
-                        <article class="flex flex-row-reverse md:flex-row-reverse gap-3 md:gap-4 pb-3 border-b border-gray-100 last:border-0">
+                        <article class="flex flex-row-reverse md:flex-row-reverse gap-2 md:gap-4 py-3 md:py-4 border-b border-gray-100 last:border-0">
                             {{-- ডান: ছবি --}}
                             <a href="#" class="flex-shrink-0">
                                 <div class="img-placeholder w-36 h-24 md:w-[305px] md:h-[170px]"><img src="https://loremflickr.com/600/400/parliament,building?lock=1" 
@@ -375,6 +375,9 @@
                                         জাতীয় সংসদে গুরুত্বপূর্ণ বিল পাস, নতুন আইন কার্যকর হচ্ছে শীঘ্রই
                                     </h3>
                                 </a>
+                                <p class="hidden md:block text-sm font-semibold text-desc leading-relaxed line-clamp-2">
+                                    আজ জাতীয় সংসদে একটি ঐতিহাসিক বিল পাস হয়েছে যা দেশের নাগরিকদের জীবনে বড় পরিবর্তন আনবে বলে আশা করা হচ্ছে। এই আইনের মাধ্যমে ডিজিটাল সেবার পরিধি আরও বিস্তৃত হবে।
+                                </p>
                                 <div class="flex items-center gap-1.5 mt-auto text-gray-500">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
                                     <span class="text-[10px] md:text-xs font-medium text-gray-500">
@@ -385,7 +388,7 @@
                         </article>
 
                         {{-- নিউজ কার্ড ২ --}}
-                        <article class="flex flex-row-reverse md:flex-row-reverse gap-3 md:gap-4 pb-3 border-b border-gray-100 last:border-0">
+                        <article class="flex flex-row-reverse md:flex-row-reverse gap-2 md:gap-4 py-3 md:py-4 border-b border-gray-100 last:border-0">
                             <a href="#" class="flex-shrink-0">
                                 <div class="img-placeholder w-36 h-24 md:w-[305px] md:h-[170px]"><img src="https://loremflickr.com/600/400/economy,money?lock=2" 
                                      alt="অর্থনীতি"
@@ -397,6 +400,9 @@
                                         দেশের অর্থনীতিতে নতুন গতি, রপ্তানি আয় বেড়েছে ১৫ শতাংশ
                                     </h3>
                                 </a>
+                                <p class="hidden md:block text-sm font-semibold text-desc leading-relaxed line-clamp-2">
+                                    চলতি অর্থ বছরে দেশের রপ্তানি আয় উল্লেখযোগ্যভাবে বৃদ্ধি পেয়েছে। গার্মেন্টস সেক্টর এবং কৃষি পণ্যের রপ্তানি বৃদ্ধির কারণে এই সাফল্য এসেছে বলে মনে করছেন বিশেষজ্ঞরা।
+                                </p>
                                 <div class="flex items-center gap-1.5 mt-auto text-gray-500">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
                                     <span class="text-[10px] md:text-xs font-medium text-gray-500">
@@ -407,7 +413,7 @@
                         </article>
 
                         {{-- নিউজ কার্ড ৩ --}}
-                        <article class="flex flex-row-reverse md:flex-row-reverse gap-3 md:gap-4 pb-3 border-b border-gray-100 last:border-0">
+                        <article class="flex flex-row-reverse md:flex-row-reverse gap-2 md:gap-4 py-3 md:py-4 border-b border-gray-100 last:border-0">
                             <a href="#" class="flex-shrink-0">
                                 <div class="img-placeholder w-36 h-24 md:w-[305px] md:h-[170px]"><img src="https://loremflickr.com/600/400/city,traffic?lock=3" 
                                      alt="যানজট"
@@ -419,6 +425,9 @@
                                         রাজধানীতে যানজট নিরসনে নতুন পরিকল্পনা গ্রহণ করেছে সরকার
                                     </h3>
                                 </a>
+                                <p class="hidden md:block text-sm font-semibold text-desc leading-relaxed line-clamp-2">
+                                    ঢাকা মহানগরীর যানজট সমস্যা সমাধানে সরকার একটি বিস্তারিত মহাপরিকল্পনা গ্রহণ করেছে। নতুন ফ্লাইওভার এবং মেট্রোরেলের সংযোগ আরও বাড়ানোর প্রস্তাব দেওয়া হয়েছে।
+                                </p>
                                 <div class="flex items-center gap-1.5 mt-auto text-gray-500">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
                                     <span class="text-[10px] md:text-xs font-medium text-gray-500">
@@ -429,7 +438,7 @@
                         </article>
 
                         {{-- নিউজ কার্ড ৪ --}}
-                        <article class="flex flex-row-reverse md:flex-row-reverse gap-3 md:gap-4 pb-3 border-b border-gray-100 last:border-0 border-b-0">
+                        <article class="flex flex-row-reverse md:flex-row-reverse gap-2 md:gap-4 pb-3 border-b border-gray-100 last:border-0 border-b-0">
                             <a href="#" class="flex-shrink-0">
                                 <div class="img-placeholder w-36 h-24 md:w-[305px] md:h-[170px]"><img src="https://loremflickr.com/600/400/student,college?lock=4" 
                                      alt="শিক্ষা"
@@ -441,6 +450,9 @@
                                         শিক্ষা খাতে বরাদ্দ বৃদ্ধি, নতুন বিশ্ববিদ্যালয় স্থাপনের ঘোষণা
                                     </h3>
                                 </a>
+                                <p class="hidden md:block text-sm font-semibold text-desc leading-relaxed line-clamp-2">
+                                    সরকার আগামী বাজেটে শিক্ষা খাতে বরাদ্দ বাড়ানোর পরিকল্পনা করেছে। গবেষণার কাজে সহায়তার জন্য প্রতিটি জেলায় আধুনিক ল্যাবরেটরি তৈরি করা হবে।
+                                </p>
                                 <div class="flex items-center gap-1.5 mt-auto text-gray-500">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
                                     <span class="text-[10px] md:text-xs font-medium text-gray-500">
@@ -463,30 +475,33 @@
                         </div>
 
                         {{-- বিজ্ঞাপন ১: বড় ব্যানার --}}
-                        <div class="block overflow-hidden  border border-slate-200 shadow-sm transition-all group">
-                            <div class="relative h-[250px] w-full bg-gradient-to-br from-[#1e3a5f] to-[#0f172a] flex flex-col items-center justify-center p-8 text-center overflow-hidden">
-                                {{-- Background Pattern --}}
-                                <div class="absolute inset-0 opacity-10 pointer-events-none">
-                                    <svg width="100%" height="100%"><pattern id="pattern-sp" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="white"/></pattern><rect width="100%" height="100%" fill="url(#pattern-sp)"/></svg>
+                        <a href="#" class="block overflow-hidden border border-slate-200 shadow-sm transition-all group relative">
+                            <div class="relative h-[250px] w-full overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&auto=format&fit=crop&q=80"
+                                     alt="বিজ্ঞাপন"
+                                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+                                <div class="absolute bottom-0 left-0 right-0 p-4 text-center">
+                                    <p class="text-white font-bold text-base leading-tight mb-2">আপনার ব্যবসার প্রসারে<br>আমাদের সাথে যোগ দিন</p>
+                                    <span class="inline-block px-4 py-1.5 bg-rose-600 text-white text-xs font-bold hover:bg-rose-700 transition-colors">বিজ্ঞাপন দিন →</span>
                                 </div>
-                                
-                                <div class="w-16 h-16 bg-white/10  flex items-center justify-center mb-4 backdrop-blur-md border border-white/20">
-                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-                                </div>
-                                <h4 class="text-white font-bold text-xl leading-tight mb-4 relative z-10">আপনার ব্যবসার প্রসারে<br>আমাদের সাথে নামুন</h4>
-                                <a href="#" class="px-6 py-2.5 bg-rose-600 text-white text-sm font-bold  hover:bg-rose-700 transition-all hover:scale-105 shadow-xl relative z-10">বিজ্ঞাপন দিন →</a>
                             </div>
-                        </div>
+                        </a>
 
                         {{-- বিজ্ঞাপন ২: মাঝারি ব্যানার --}}
-                        <div class="block overflow-hidden  border border-slate-200 shadow-sm transition-all group mt-4">
-                            <div class="relative h-[180px] w-full bg-gradient-to-br from-[#7c3aed] to-[#4338ca] flex flex-col items-center justify-center p-6 text-center overflow-hidden">
-                                <div class="absolute top-[-20%] right-[-10%] w-40 h-40 bg-white/10  blur-3xl"></div>
-                                <h4 class="text-white font-bold text-lg leading-tight mb-2">স্পনসরড পোস্ট</h4>
-                                <p class="text-indigo-100 text-xs mb-4">সবচেয়ে কম মূল্যে আপনার পণ্যটি প্রচার করুন</p>
-                                <span class="px-4 py-1.5 bg-white/20 text-white text-[11px] font-bold  border border-white/30 backdrop-blur-sm">বিস্তারিত দেখুন</span>
+                        <a href="#" class="block overflow-hidden border border-slate-200 shadow-sm transition-all group relative mt-4">
+                            <div class="relative h-[180px] w-full overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&auto=format&fit=crop&q=80"
+                                     alt="স্পনসরড"
+                                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent"></div>
+                                <div class="absolute bottom-0 left-0 right-0 p-3 text-center">
+                                    <p class="text-white font-bold text-sm mb-1">স্পনসরড পোস্ট</p>
+                                    <p class="text-gray-200 text-[11px] mb-2">সবচেয়ে কম মূল্যে আপনার পণ্য প্রচার করুন</p>
+                                    <span class="inline-block px-3 py-1 bg-white/20 border border-white/40 text-white text-[10px] font-bold backdrop-blur-sm">বিস্তারিত দেখুন</span>
+                                </div>
                             </div>
-                        </div>
+                        </a>
 
                     </div>
                 </section>

@@ -41,21 +41,21 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
                             হোম
                         </a></li>
-                        <li class="border-b border-gray-400 pb-1"><a href="#" class="block text-xl font-semibold hover:text-rose-600 transition-colors">সর্বশেষ</a></li>
+                        <li class="border-b border-gray-400 pb-1"><a href="/national" class="block text-xl font-semibold hover:text-rose-600 transition-colors">সর্বশেষ</a></li>
                         <li class="border-b border-gray-400 pb-1"><a href="/special-news" class="block text-xl font-semibold hover:text-rose-600 transition-colors">বিশেষ সংবাদ</a></li>
                         <li class="border-b border-gray-400 pb-1"><a href="/national" class="block text-xl font-semibold hover:text-rose-600 transition-colors">জাতীয়</a></li>
-                        <li class="border-b border-gray-400 pb-1"><a href="#" class="block text-xl font-semibold hover:text-rose-600 transition-colors">সারাদেশ</a></li>
-                        <li class="border-b border-gray-400 pb-1"><a href="#" class="block text-xl font-semibold hover:text-rose-600 transition-colors">রাজনীতি</a></li>
-                        <li class="border-b border-gray-400 pb-1"><a href="#" class="block text-xl font-semibold hover:text-rose-600 transition-colors">বিশ্ব সংবাদ</a></li>
-                        <li class="border-b border-gray-400 pb-1"><a href="#" class="block text-xl font-semibold hover:text-rose-600 transition-colors">খেলা</a></li>
-                        <li class="border-b border-gray-400 pb-1"><a href="#" class="block text-xl font-semibold hover:text-rose-600 transition-colors">বিনোদন</a></li>
-                        <li class="border-b border-gray-400 pb-1"><a href="#" class="block text-xl font-semibold hover:text-rose-600 transition-colors">অর্থনীতি</a></li>
-                        <li class="border-b border-gray-400 pb-1"><a href="#" class="block text-xl font-semibold hover:text-rose-600 transition-colors">লাইফস্টাইল</a></li>
-                        <li class="border-b border-gray-400 pb-1"><a href="#" class="block text-xl font-semibold hover:text-rose-600 transition-colors">টেক</a></li>
-                        <li class="border-b border-gray-400 pb-1"><a href="#" class="block text-xl font-semibold hover:text-rose-600 transition-colors">আইন-আদালত</a></li>
-                        <li class="border-b border-gray-400 pb-1"><a href="#" class="block text-xl font-semibold hover:text-rose-600 transition-colors">ভিডিও</a></li>
-                        <li class="border-b border-gray-400 pb-1"><a href="#" class="block text-xl font-semibold hover:text-rose-600 transition-colors">মতামত</a></li>
-                        <li class="border-b border-gray-400 pb-1"><a href="#" class="block text-xl font-semibold hover:text-rose-600 transition-colors">অন্যান্য</a></li>
+                        <li class="border-b border-gray-400 pb-1"><a href="/national" class="block text-xl font-semibold hover:text-rose-600 transition-colors">সারাদেশ</a></li>
+                        <li class="border-b border-gray-400 pb-1"><a href="/national" class="block text-xl font-semibold hover:text-rose-600 transition-colors">রাজনীতি</a></li>
+                        <li class="border-b border-gray-400 pb-1"><a href="/national" class="block text-xl font-semibold hover:text-rose-600 transition-colors">বিশ্ব সংবাদ</a></li>
+                        <li class="border-b border-gray-400 pb-1"><a href="/national" class="block text-xl font-semibold hover:text-rose-600 transition-colors">খেলা</a></li>
+                        <li class="border-b border-gray-400 pb-1"><a href="/national" class="block text-xl font-semibold hover:text-rose-600 transition-colors">বিনোদন</a></li>
+                        <li class="border-b border-gray-400 pb-1"><a href="/national" class="block text-xl font-semibold hover:text-rose-600 transition-colors">অর্থনীতি</a></li>
+                        <li class="border-b border-gray-400 pb-1"><a href="/national" class="block text-xl font-semibold hover:text-rose-600 transition-colors">লাইফস্টাইল</a></li>
+                        <li class="border-b border-gray-400 pb-1"><a href="/national" class="block text-xl font-semibold hover:text-rose-600 transition-colors">টেক</a></li>
+                        <li class="border-b border-gray-400 pb-1"><a href="/national" class="block text-xl font-semibold hover:text-rose-600 transition-colors">আইন-আদালত</a></li>
+                        <li class="border-b border-gray-400 pb-1"><a href="/national" class="block text-xl font-semibold hover:text-rose-600 transition-colors">ভিডিও</a></li>
+                        <li class="border-b border-gray-400 pb-1"><a href="/national" class="block text-xl font-semibold hover:text-rose-600 transition-colors">মতামত</a></li>
+                        <li class="border-b border-gray-400 pb-1"><a href="/national" class="block text-xl font-semibold hover:text-rose-600 transition-colors">অন্যান্য</a></li>
                     </ul>
                 </div>
             </div>
@@ -246,21 +246,21 @@
 
                 <div class="flex-1 overflow-x-auto overflow-y-hidden no-scrollbar py-0 flex items-center justify-between">
                     <ul class="flex justify-start items-center gap-3 md:gap-5 text-sm md:text-lg font-semibold uppercase whitespace-nowrap pt-1 pb-1">
-                        <li><a href="#" class="hover:text-rose-600 border-b-2 border-transparent hover:border-rose-600 pb-1 transition-all">সর্বশেষ</a></li>
+                        <li><a href="/national" class="hover:text-rose-600 border-b-2 border-transparent hover:border-rose-600 pb-1 transition-all">সর্বশেষ</a></li>
                         <li><a href="/special-news" class="hover:text-rose-600 border-b-2 border-transparent hover:border-rose-600 pb-1 transition-all">বিশেষ সংবাদ</a></li>
                         <li><a href="/national" class="hover:text-rose-600 border-b-2 border-transparent hover:border-rose-600 pb-1 transition-all">জাতীয়</a></li>
-                        <li><a href="#" class="hover:text-rose-600 border-b-2 border-transparent hover:border-rose-600 pb-1 transition-all">সারাদেশ</a></li>
-                        <li><a href="#" class="hover:text-rose-600 border-b-2 border-transparent hover:border-rose-600 pb-1 transition-all">রাজনীতি</a></li>
-                        <li><a href="#" class="hover:text-rose-600 border-b-2 border-transparent hover:border-rose-600 pb-1 transition-all">বিশ্ব সংবাদ</a></li>
-                        <li><a href="#" class="hover:text-rose-600 border-b-2 border-transparent hover:border-rose-600 pb-1 transition-all">খেলা</a></li>
-                        <li><a href="#" class="hover:text-rose-600 border-b-2 border-transparent hover:border-rose-600 pb-1 transition-all">বিনোদন</a></li>
-                        <li><a href="#" class="hover:text-rose-600 border-b-2 border-transparent hover:border-rose-600 pb-1 transition-all">অর্থনীতি</a></li>
-                        <li><a href="#" class="hover:text-rose-600 border-b-2 border-transparent hover:border-rose-600 pb-1 transition-all">লাইফস্টাইল</a></li>
-                        <li><a href="#" class="hover:text-rose-600 border-b-2 border-transparent hover:border-rose-600 pb-1 transition-all">টেক</a></li>
-                        <li><a href="#" class="hover:text-rose-600 border-b-2 border-transparent hover:border-rose-600 pb-1 transition-all">আইন-আদালত</a></li>
-                        <li><a href="#" class="hover:text-rose-600 border-b-2 border-transparent hover:border-rose-600 pb-1 transition-all">ভিডিও</a></li>
-                        <li><a href="#" class="hover:text-rose-600 border-b-2 border-transparent hover:border-rose-600 pb-1 transition-all">মতামত</a></li>
-                        <li><a href="#" class="hover:text-rose-600 border-b-2 border-transparent hover:border-rose-600 pb-1 transition-all">অন্যান্য</a></li>
+                        <li><a href="/national" class="hover:text-rose-600 border-b-2 border-transparent hover:border-rose-600 pb-1 transition-all">সারাদেশ</a></li>
+                        <li><a href="/national" class="hover:text-rose-600 border-b-2 border-transparent hover:border-rose-600 pb-1 transition-all">রাজনীতি</a></li>
+                        <li><a href="/national" class="hover:text-rose-600 border-b-2 border-transparent hover:border-rose-600 pb-1 transition-all">বিশ্ব সংবাদ</a></li>
+                        <li><a href="/national" class="hover:text-rose-600 border-b-2 border-transparent hover:border-rose-600 pb-1 transition-all">খেলা</a></li>
+                        <li><a href="/national" class="hover:text-rose-600 border-b-2 border-transparent hover:border-rose-600 pb-1 transition-all">বিনোদন</a></li>
+                        <li><a href="/national" class="hover:text-rose-600 border-b-2 border-transparent hover:border-rose-600 pb-1 transition-all">অর্থনীতি</a></li>
+                        <li><a href="/national" class="hover:text-rose-600 border-b-2 border-transparent hover:border-rose-600 pb-1 transition-all">লাইফস্টাইল</a></li>
+                        <li><a href="/national" class="hover:text-rose-600 border-b-2 border-transparent hover:border-rose-600 pb-1 transition-all">টেক</a></li>
+                        <li><a href="/national" class="hover:text-rose-600 border-b-2 border-transparent hover:border-rose-600 pb-1 transition-all">আইন-আদালত</a></li>
+                        <li><a href="/national" class="hover:text-rose-600 border-b-2 border-transparent hover:border-rose-600 pb-1 transition-all">ভিডিও</a></li>
+                        <li><a href="/national" class="hover:text-rose-600 border-b-2 border-transparent hover:border-rose-600 pb-1 transition-all">মতামত</a></li>
+                        <li><a href="/national" class="hover:text-rose-600 border-b-2 border-transparent hover:border-rose-600 pb-1 transition-all">অন্যান্য</a></li>
                     </ul>
                     
                     <!-- Mobile Menu Icon (Far Right of Categories) -->

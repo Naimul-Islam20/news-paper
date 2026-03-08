@@ -61,11 +61,11 @@
 
             <!-- Column 3: Legal Links (Span 3) -->
             <div class="md:col-span-3 md:border-r border-slate-200 md:pr-4">
-                <ul class="space-y-4 text-base font-semibold uppercase text-slate-600">
-                    <li><a href="#" class="hover:text-black transition-colors">বিজ্ঞাপন</a></li>
-                    <li><a href="#" class="hover:text-black transition-colors">যোগাযোগ</a></li>
-                    <li><a href="#" class="hover:text-black transition-colors">গোপনীয়তা নীতি</a></li>
-                    <li><a href="#" class="hover:text-black transition-colors">শর্তাবলী</a></li>
+                <ul class="space-y-4 text-base font-semibold">
+                    <li><a href="#" class="hover:text-rose-600 transition-colors">বিজ্ঞাপন</a></li>
+                    <li><a href="#" class="hover:text-rose-600 transition-colors">যোগাযোগ</a></li>
+                    <li><a href="/privacy-policy" class="hover:text-rose-600 transition-colors">গোপনীয়তা নীতি</a></li>
+                    <li><a href="/terms" class="hover:text-rose-600 transition-colors">শর্তাবলী</a></li>
                 </ul>
             </div>
 

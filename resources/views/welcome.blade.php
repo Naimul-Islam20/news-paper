@@ -22,7 +22,7 @@
     <section class="flex flex-col lg:grid lg:grid-cols-[2.7fr_6.3fr_3fr] gap-6 lg:gap-3 mb-8 border-b border-black pb-8">
         <!-- Left Column: Top Stories (Order 2 on mobile, Order 1 on Desktop) -->
         <div class="lg:border-r border-black lg:pr-3 text-left order-2 lg:order-1">
-            <div class="group mb-5 last:mb-0 cursor-pointer text-left">
+            <a href="/news-details" class="block group mb-5 last:mb-0 cursor-pointer text-left">
                 <div class="img-placeholder overflow-hidden aspect-video mb-3 lg:hidden"><img src="https://images.unsplash.com/photo-1512428559083-a401c4c34a1b?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                 </div>
                 <h4 class="text-xl lg:text-2xl font-semibold serif leading-snug group-hover:text-rose-600 transition-colors mt-1 text-left text-title">
@@ -31,9 +31,9 @@
                 <p class="text-sm lg:text-md text-desc font-medium leading-relaxed line-clamp-3 mt-1 text-left">
                     ইরানের বিরুদ্ধে যুক্তরাষ্ট্র ও ইসরায়েলের চলমান সামরিক অভিযানের জেরে বৈশ্বিক জ্বালানি সরবরাহ ব্যবস্থা মারাত্মকভাবে ব্যাহত হওয়ার আশঙ্কা দেখা দিয়েছে।
                 </p>
-            </div>
+            </a>
             
-            <div class="group mb-5 last:mb-0 cursor-pointer border-t border-black pt-5 text-left">
+            <a href="/news-details" class="block group mb-5 last:mb-0 cursor-pointer border-t border-black pt-5 text-left">
                 <div class="img-placeholder overflow-hidden aspect-video mb-3 lg:hidden"><img src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                 </div>
                 <h4 class="text-lg font-bold serif leading-snug group-hover:text-rose-600 transition-colors mt-1 text-left text-title">
@@ -42,9 +42,9 @@
                 <p class="text-sm text-desc font-medium leading-relaxed line-clamp-3 mt-1 text-left">
                     সপ্তাহের শেষ দিনে দেশের প্রধান পুঁজিবাজারে সূচকের বড় উল্লম্ফন দেখা দিয়েছে। লেনদেন ছাড়িয়েছে হাজার কোটি টাকা।
                 </p>
-            </div>
+            </a>
 
-            <div class="group mb-5 last:mb-0 cursor-pointer border-t border-black pt-5 text-left">
+            <a href="/news-details" class="block group mb-5 last:mb-0 cursor-pointer border-t border-black pt-5 text-left">
                 <div class="img-placeholder overflow-hidden aspect-video mb-3 lg:hidden"><img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                 </div>
                 <h4 class="text-lg font-bold serif leading-snug group-hover:text-rose-600 transition-colors mt-1 text-left text-title">
@@ -53,9 +53,9 @@
                 <p class="text-sm text-desc font-medium leading-relaxed line-clamp-3 mt-1 text-left">
                     রাজধানীর উপকণ্ঠে অত্যাধুনিক প্রযুক্তিনির্ভর স্মার্ট সিটি গড়ে তোলার কাজ শুরু হয়েছে। এতে থাকবে টেকসই জ্বালানি ও অটোমেশন ব্যবস্থা।
                 </p>
-            </div>
+            </a>
 
-            <div class="group mb-5 last:mb-0 cursor-pointer border-t border-black pt-5 text-left">
+            <a href="/news-details" class="block group mb-5 last:mb-0 cursor-pointer border-t border-black pt-5 text-left">
                 <div class="img-placeholder overflow-hidden aspect-video mb-3 lg:hidden"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                 </div>
                 <h4 class="text-lg font-bold serif leading-snug group-hover:text-rose-600 transition-colors mt-1 text-left text-title">
@@ -64,9 +64,9 @@
                 <p class="text-sm text-desc font-medium leading-relaxed line-clamp-3 mt-1 text-left">
                     সপ্তাহের শেষ দিনে দেশের প্রধান পুঁজিবাজারে সূচকের বড় উল্লম্ফন দেখা দিয়েছে। লেনদেন ছাড়িয়েছে হাজার কোটি টাকা।
                 </p>
-            </div>
+            </a>
             
-            <div class="group mb-5 last:mb-0 cursor-pointer border-t border-black pt-5 text-left">
+            <a href="/news-details" class="block group mb-5 last:mb-0 cursor-pointer border-t border-black pt-5 text-left">
                 <div class="img-placeholder overflow-hidden aspect-video mb-3 lg:hidden"><img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                 </div>
                 <h4 class="text-lg font-bold serif leading-snug group-hover:text-rose-600 transition-colors mt-1 text-left text-title">
@@ -75,12 +75,12 @@
                 <p class="text-sm text-desc font-medium leading-relaxed line-clamp-3 mt-1 text-left">
                     বৈশ্বিক মন্দার আশঙ্কায় বড় দেশগুলো তাদের নীতিমালায় পরিবর্তন আনছে। এর প্রভাব পড়ছে বাংলাদেশের মতো উন্নয়নশীল দেশগুলোর রপ্তানি খাতে।
                 </p>
-            </div>
+            </a>
         </div>
 
         <!-- Center: Featured News (Order 1 on mobile, Order 2 on Desktop) -->
         <div class="order-1 lg:order-2 px-0 lg:px-2">
-            <article class="group cursor-pointer">
+            <a href="/news-details" class="block group cursor-pointer">
                 <div class="img-placeholder relative overflow-hidden aspect-[16/9] mb-4"><img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=2070&auto=format&fit=crop" alt="Featured News" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onload="this.parentElement.classList.remove('img-placeholder')" >
                 </div>
                 <div class="text-center">
@@ -91,27 +91,27 @@
                       ইরানের বিরুদ্ধে ইসরায়েল ও যুক্তরাষ্ট্রের যুদ্ধ বৃহস্পতিবার পর্যন্ত ষষ্ঠ দিনে গড়েছে। এরইমধ্যে মধ্যপ্রাচ্যে নতুন উত্তেজনা ছড়িয়ে পড়েছে...
                     </p>
                 </div>
-            </article>
+            </a>
 
             <!-- Sub-featured grid (1 column mobile, 2 columns desktop) -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-4 pt-4 border-t border-black">
-                <div class="group cursor-pointer">
+                <a href="/news-details" class="block group cursor-pointer">
                     <div class="img-placeholder overflow-hidden aspect-video mb-3"><img src="https://images.unsplash.com/photo-1493612276216-ee3925520721?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                     </div>
                     <h3 class="text-base md:text-lg font-bold serif leading-snug text-title group-hover:text-rose-600 transition-colors text-left">
                         লেবানন সীমান্তে তুমুল লড়াই, নিহত ১০ ইসরায়েলি সৈন্য
                     </h3>
-                </div>
-                <div class="group cursor-pointer mt-4 md:mt-0">
+                </a>
+                <a href="/news-details" class="block group cursor-pointer mt-4 md:mt-0">
                     <div class="img-placeholder overflow-hidden aspect-video mb-3"><img src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                     </div>
                     <h3 class="text-base md:text-lg font-bold serif leading-snug text-title group-hover:text-rose-600 transition-colors text-left">
                         বাইডেনের কড়া হুঁশিয়ারি, মধ্যপ্রাচ্যে আরও সেনা মোতায়েন
                     </h3>
-                </div>
+                </a>
             </div>
 
-            <div class="group cursor-pointer mt-5 pt-5 border-t border-gray-900">
+            <a href="/news-details" class="block group cursor-pointer mt-5 pt-5 border-t border-gray-900">
                 <div class="img-placeholder overflow-hidden aspect-video mb-3 md:hidden"><img src="https://images.unsplash.com/photo-1512753360435-0da6135807b4?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                 </div>
                 <h3 class="text-lg md:text-xl font-bold serif leading-snug text-title group-hover:text-rose-600 transition-colors text-left mb-2">
@@ -120,10 +120,10 @@
                 <p class="text-desc text-sm leading-relaxed text-left line-clamp-2">
                     মধ্যপ্রাচ্যের বর্তমান অস্থিতিশীল পরিস্থিতি নিরসনে জাতিসংঘের পক্ষ থেকে একটি জরুরি পদক্ষেপের ঘোষণা দেওয়া হয়েছে। বিশ্বনেতারা মনে করছেন, এখনই কার্যকর কোনো ব্যবস্থা না নিলে পরিস্থিতি নিয়ন্ত্রণের বাইরে চলে যেতে পারে...
                 </p>
-            </div>
+            </a>
 
             <!-- More Full Width Items -->
-            <div class="group cursor-pointer mt-5 pt-5 border-t border-gray-900">
+            <a href="/news-details" class="block group cursor-pointer mt-5 pt-5 border-t border-gray-900">
                 <div class="img-placeholder overflow-hidden aspect-video mb-3 md:hidden"><img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onload="this.parentElement.classList.remove('img-placeholder')" >
                 </div>
                 <h3 class="text-lg md:text-xl font-bold serif leading-snug text-title group-hover:text-rose-600 transition-colors text-left mb-2">
@@ -132,7 +132,7 @@
                 <p class="text-desc text-sm leading-relaxed text-left line-clamp-2">
                     অ্যামাজন রেইনফরেস্টের গহীন জঙ্গলে লিডার প্রযুক্তির মাধ্যমে প্রাচীন এক শহরের ধ্বংসাবশেষ খুঁজে পাওয়া গেছে। বিজ্ঞানীরা ধারণা করছেন, এটি কয়েক হাজার বছর আগের কোনো উন্নত সভ্যতার অংশ ছিল যা এতদিন লোকচক্ষুর অন্তরালে ছিল...
                 </p>
-            </div>
+            </a>
 
            
         </div>
