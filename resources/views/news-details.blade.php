@@ -1,7 +1,7 @@
 <x-layout>
     <x-slot:title>জাতীয় সংসদে গুরুত্বপূর্ণ বিল পাস - দ্য ডেইলি নিউজ</x-slot>
 
-    <div class="py-10 min-h-screen bg-white">
+    <div class="py-4 md:py-10 min-h-screen bg-white">
         <div class="container">
             @php
                 \Carbon\Carbon::setLocale('bn');
@@ -9,8 +9,8 @@
             @endphp
 
             <!-- Breadcrumbs -->
-            <div class="mb-10 text-left">
-                <div class="flex items-center gap-1 text-sm font-bold text-slate-500 mb-6">
+            <div class="mb-4 md:mb-10 text-left">
+                <div class="flex flex-wrap items-center gap-1 text-sm font-bold text-slate-500 mb-4 md:mb-6">
                     <a href="/" class="text-slate-500 hover:text-rose-600 transition-all flex items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                             <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
@@ -47,14 +47,14 @@
                 <!-- প্রথম কলাম (৮ ভাগ) -->
                 <div class="flex flex-col gap-6 w-full">
                     <!-- শিরোনাম -->
-                    <h1 class="text-4xl font-bold serif text-title leading-tight">
+                    <h1 class="text-2xl md:text-4xl font-bold serif text-title leading-tight">
                         জাতীয় সংসদে গুরুত্বপূর্ণ বিল পাস, নতুন আইন কার্যকর হচ্ছে শীঘ্রই
                     </h1>
 
                     <div class="flex flex-col gap-1 pb-2 mb-2">
                         <span class="text-lg font-bold text-title leading-tight">ইত্তেফাক ডিজিটাল রিপোর্ট</span>
-                        <div class="flex items-center justify-between border-b border-slate-100 pb-3">
-                            <span class="text-base text-desc">প্রকাশ : ০৬ মার্চ ২০২৬, ২১:৪৬</span>
+                        <div class="flex flex-col md:flex-row md:items-center justify-between border-b border-slate-100 pb-3 gap-4">
+                            <span class="text-sm md:text-base text-desc">প্রকাশ : ০৬ মার্চ ২০২৬, ২১:৪৬</span>
                             
                             <!-- সোশ্যাল শেয়ার আইকনসমূহ -->
                             <div class="flex items-center gap-3">
@@ -113,7 +113,7 @@
                     </div>
 
                     <!-- নিউজ ডেসক্রিপশন -->
-                    <div class="prose prose-lg max-w-none text-title text-xl font-semibold space-y-6 pt-4" style="padding-left: 125px; padding-right: 125px; text-align: justify; line-height: 1.8;">
+                    <div class="prose prose-lg max-w-none text-title text-xl font-medium space-y-6 pt-4 px-0 lg:px-[125px] text-justify leading-[1.8]">
                         <p>
                             আজ জাতীয় সংসদে একটি ঐতিহাসিক বিল পাস হয়েছে যা দেশের নাগরিকদের জীবনে বড় পরিবর্তন আনবে বলে আশা করা হচ্ছে। এই আইনের মাধ্যমে ডিজিটাল সেবার পরিধি আরও বিস্তৃত হবে। সংসদ অধিবেশনে কণ্ঠভোটে এই বিলটি পাস হয়।
                         </p>
@@ -130,7 +130,7 @@
                 </div>
 
                 <!-- দ্বিতীয় কলাম (৩ ভাগ) -->
-                <div class="flex flex-col gap-10 w-full " style="padding-left: 10px;">
+                <div class="flex flex-col gap-10 w-full">
                     
                     <!-- বিজ্ঞাপন -->
                     <div class="w-full bg-slate-50 overflow-hidden border border-slate-100 shadow-sm">
@@ -146,7 +146,7 @@
                     </div>
 
                     <!-- এ সম্পর্কিত আরও পড়ুন (সাইডবার) -->
-                    <div class="flex flex-col gap-6 pt-5">
+                    <div class="hidden lg:flex flex-col gap-6 pt-5">
                         <div class="flex items-center gap-3 border-b border-slate-100 pb-2">
                             <div class="w-1.5 h-6 bg-rose-600"></div>
                             <h3 class="text-xl font-bold serif text-title">এ সম্পর্কিত আরও পড়ুন</h3>
@@ -184,61 +184,85 @@
             </section>
 
             <!-- এ সম্পর্কিত আরও পড়ুন (একদম নিচে, ৪ কলামে) -->
-            <div class="mt-[100px] pt-[60px] ">
+            <div class="mt-12 md:mt-[100px] pt-8 md:pt-[60px] ">
                 <div class="flex items-center gap-3 mb-8">
                     <div class="w-2 h-8 bg-rose-600"></div>
-                    <h3 class="text-3xl font-bold serif text-title">এ সম্পর্কিত আরও পড়ুন</h3>
+                    <h3 class="text-xl md:text-3xl font-bold serif text-title">এ সম্পর্কিত আরও পড়ুন</h3>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <!-- আইটেম ১ -->
-                    <div class="group cursor-pointer flex flex-col gap-3">
-                        <div class="img-placeholder aspect-[3/2] overflow-hidden">
+                    <div class="group cursor-pointer flex flex-row md:flex-col gap-2 md:gap-3 pb-3 border-b border-gray-100 md:border-0 md:pb-0 last:border-0 last:pb-0 lg:hidden">
+                        <div class="img-placeholder w-36 h-24 md:w-full md:h-auto md:aspect-[3/2] shrink-0 overflow-hidden relative shadow-sm border border-gray-100">
                             <img src="https://loremflickr.com/600/400/law?lock=10" 
                                  alt="Related News" 
                                  class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
                                  onload="this.parentElement.classList.remove('img-placeholder')">
                         </div>
-                        <h4 class="text-lg font-bold serif leading-snug text-title group-hover:text-rose-600 transition-colors">
-                            নতুন আইন বাস্তবায়নে জেলা প্রশাসকদের বিশেষ নির্দেশনা ও সঠিক নিয়মাবলী
+                        <h4 class="text-base md:text-lg font-bold serif leading-snug text-title group-hover:text-rose-600 transition-colors flex-1">
+                            নতুন আইন বাস্তবায়নে জেলা প্রশাসকদের বিশেষ নির্দেশনা
                         </h4>
                     </div>
 
-                    <!-- আইটেম ২ -->
-                    <div class="group cursor-pointer flex flex-col gap-3">
-                        <div class="img-placeholder aspect-[3/2] overflow-hidden">
+                    <div class="group cursor-pointer flex flex-row md:flex-col gap-2 md:gap-3 pb-3 border-b border-gray-100 md:border-0 md:pb-0 last:border-0 last:pb-0 lg:hidden">
+                        <div class="img-placeholder w-36 h-24 md:w-full md:h-auto md:aspect-[3/2] shrink-0 overflow-hidden relative shadow-sm border border-gray-100">
                             <img src="https://loremflickr.com/600/400/office?lock=11" 
                                  alt="Related News" 
                                  class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
                                  onload="this.parentElement.classList.remove('img-placeholder')">
                         </div>
-                        <h4 class="text-lg font-bold serif leading-snug text-title group-hover:text-rose-600 transition-colors">
+                        <h4 class="text-base md:text-lg font-bold serif leading-snug text-title group-hover:text-rose-600 transition-colors flex-1">
+                            স্মার্ট বাংলাদেশ গড়তে ডিজিটাল সেবায় আসছে আমূল পরিবর্তন
+                        </h4>
+                    </div>
+
+                    <!-- আইটেম ১ -->
+                    <div class="group cursor-pointer flex flex-row md:flex-col gap-2 md:gap-3 pb-3 border-b border-gray-100 md:border-0 md:pb-0 last:border-0 last:pb-0">
+                        <div class="img-placeholder w-36 h-24 md:w-full md:h-auto md:aspect-[3/2] shrink-0 overflow-hidden relative shadow-sm border border-gray-100">
+                            <img src="https://loremflickr.com/600/400/law?lock=10" 
+                                 alt="Related News" 
+                                 class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
+                                 onload="this.parentElement.classList.remove('img-placeholder')">
+                        </div>
+                        <h4 class="text-base md:text-lg font-bold serif leading-snug text-title group-hover:text-rose-600 transition-colors flex-1">
+                            নতুন আইন বাস্তবায়নে জেলা প্রশাসকদের বিশেষ নির্দেশনা ও সঠিক নিয়মাবলী
+                        </h4>
+                    </div>
+
+                    <!-- আইটেম ২ -->
+                    <div class="group cursor-pointer flex flex-row md:flex-col gap-2 md:gap-3 pb-3 border-b border-gray-100 md:border-0 md:pb-0 last:border-0 last:pb-0">
+                        <div class="img-placeholder w-36 h-24 md:w-full md:h-auto md:aspect-[3/2] shrink-0 overflow-hidden relative shadow-sm border border-gray-100">
+                            <img src="https://loremflickr.com/600/400/office?lock=11" 
+                                 alt="Related News" 
+                                 class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
+                                 onload="this.parentElement.classList.remove('img-placeholder')">
+                        </div>
+                        <h4 class="text-base md:text-lg font-bold serif leading-snug text-title group-hover:text-rose-600 transition-colors flex-1">
                             স্মার্ট বাংলাদেশ গড়তে ডিজিটাল সেবায় আসছে আমূল পরিবর্তন ও নতুন পরিকল্পনা
                         </h4>
                     </div>
 
                     <!-- আইটেম ৩ -->
-                    <div class="group cursor-pointer flex flex-col gap-3">
-                        <div class="img-placeholder aspect-[3/2] overflow-hidden">
+                    <div class="group cursor-pointer flex flex-row md:flex-col gap-2 md:gap-3 pb-3 border-b border-gray-100 md:border-0 md:pb-0 last:border-0 last:pb-0">
+                        <div class="img-placeholder w-36 h-24 md:w-full md:h-auto md:aspect-[3/2] shrink-0 overflow-hidden relative shadow-sm border border-gray-100">
                             <img src="https://loremflickr.com/600/400/city?lock=12" 
                                  alt="Related News" 
                                  class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
                                  onload="this.parentElement.classList.remove('img-placeholder')">
                         </div>
-                        <h4 class="text-lg font-bold serif leading-snug text-title group-hover:text-rose-600 transition-colors">
+                        <h4 class="text-base md:text-lg font-bold serif leading-snug text-title group-hover:text-rose-600 transition-colors flex-1">
                             রাজধানীর যাতায়াত ব্যবস্থায় নতুন দিগন্ত: চালু হচ্ছে আরও একটি ফ্লাইওভার
                         </h4>
                     </div>
 
                     <!-- আইটেম ৪ -->
-                    <div class="group cursor-pointer flex flex-col gap-3">
-                        <div class="img-placeholder aspect-[3/2] overflow-hidden">
+                    <div class="group cursor-pointer flex flex-row md:flex-col gap-2 md:gap-3 pb-3 border-b border-gray-100 md:border-0 md:pb-0 last:border-0 last:pb-0">
+                        <div class="img-placeholder w-36 h-24 md:w-full md:h-auto md:aspect-[3/2] shrink-0 overflow-hidden relative shadow-sm border border-gray-100">
                             <img src="https://loremflickr.com/600/400/money?lock=13" 
                                  alt="Related News" 
                                  class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
                                  onload="this.parentElement.classList.remove('img-placeholder')">
                         </div>
-                        <h4 class="text-lg font-bold serif leading-snug text-title group-hover:text-rose-600 transition-colors">
+                        <h4 class="text-base md:text-lg font-bold serif leading-snug text-title group-hover:text-rose-600 transition-colors flex-1">
                             বৈদেশিক মুদ্রার রিজার্ভে বড় স্বস্তি, বাড়তে শুরু করেছে রেমিট্যান্স প্রবাহ
                         </h4>
                     </div>
